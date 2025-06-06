@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en"
+  ><head
+    ><title>OnConf template</title
+    ><meta property="og:title" content="OnConf template" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    /><meta charset="utf-8" /><meta
+      property="twitter:card"
+      content="summary_large_image"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Source Sans Pro;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script
+    ><script>
+      ScrollReveal({ reset: true });
+    </script></head
+  >
+  <body
+    ><link rel="stylesheet" href="./style.css" /><div
+      ><link href="./index.css" rel="stylesheet" /><div class="home-container10"
+        ><section class="home-hero"
+          ><div class="home-background1"
+            ><img
+              alt="image"
+              src="public/circle-background.svg"
+              class="home-image10" /><img
+              alt="image"
+              src="public/line-background.svg"
+              class="home-image11" /></div
+          ><header class="home-header10"
+            ><header data-thq="thq-navbar" class="home-navbar"
+              ><h2 class="home-text10">OnConf</h2
+              ><div
+                data-thq="thq-navbar-nav"
+                data-role="Nav"
+                class="home-desktop-menu"
+                ><nav
+                  data-thq="thq-navbar-nav-links"
+                  data-role="Nav"
+                  class="home-nav1"
+                  ><span class="navLink">Speakers</span
+                  ><span class="navLink">Schedule</span
+                  ><span class="navLink">Sponsors</span
+                  ><span class="navLink">Useful</span></nav
+                ><button class="button"
+                  ><span>Register now</span
+                  ><svg viewBox="0 0 1024 1024" class="home-icon10">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path></svg></button></div
+              ><div data-thq="thq-burger-menu" class="home-burger-menu"
+                ><svg viewBox="0 0 1024 1024" class="home-icon12">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg></div
+              ><div data-thq="thq-mobile-menu" class="home-mobile-menu"
+                ><div
+                  data-thq="thq-mobile-menu-nav"
+                  data-role="Nav"
+                  class="home-nav2"
+                  ><div class="home-container11"
+                    ><h2 class="home-text12">OnConf</h2
+                    ><div data-thq="thq-close-menu" class="home-menu-close"
+                      ><svg viewBox="0 0 1024 1024" class="home-icon14">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path></svg></div></div
+                  ><nav
+                    data-thq="thq-mobile-menu-nav-links"
+                    data-role="Nav"
+                    class="home-nav3"
+                    ><span class="navLink home-text13">About</span
+                    ><span class="navLink home-text14">Features</span
+                    ><span class="navLink home-text15">Pricing</span
+                    ><span class="navLink home-text16">Team</span
+                    ><span class="navLink home-text17">Blog</span></nav
+                  ><div class="home-button-container"
+                    ><button class="home-login button">Login</button
+                    ><button class="button home-register2"
+                      >Register</button
+                    ></div
+                  ><div class="home-icon-group"
+                    ><div class="home-icons"
+                      ><svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="home-icon16"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="home-icon18"
+                      >
+                        <path
+                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 602.2582857142856 1024"
+                        class="home-icon20"
+                      >
+                        <path
+                          d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                        ></path></svg></div></div></div
+                ><img
+                  alt="image"
+                  src="public/quote-background.svg"
+                  class="home-background2" /></div></header></header
+          ><div class="home-hero-content"
+            ><h1 class="home-text18">World's Largest Online Conference</h1
+            ><div class="home-caption10"
+              ><button class="button-style-1 button home-register3"
+                ><span class="home-text19">Register now</span></button
+              ><p class="home-caption11"
+                >22—24 November 2023 / OnConf.template</p
+              ></div
+            ></div
+          ></section
+        ><section class="home-notes"
+          ><div class="home-first"
+            ><div data-aos="fade-up-right" class="home-content10"
+              ><h2 class="home-header11"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod. </h2
+              ><div class="home-list1"
+                ><div class="home-note1"
+                  ><div class="home-point10"></div
+                  ><p class="home-text20"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p
+                  ></div
+                ><div class="home-note2"
+                  ><div class="home-point11"></div
+                  ><p class="home-text21"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.</p
+                  ></div
+                ></div
+              ></div
+            ><img
+              alt="image"
+              src="public/notes-1-1400w.png"
+              class="home-image12 image-notes" /></div
+          ><div class="home-second"
+            ><div data-aos="fade-up-left" class="home-content11"
+              ><h2 class="home-header12"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2
+              ><button class="button button-style-2 home-register4"
+                ><span>Register now</span
+                ><svg viewBox="0 0 1024 1024" class="home-icon22">
+                  <path
+                    d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                  ></path></svg></button></div
+            ><img
+              alt="image"
+              src="public/notes-2-1400w.png"
+              class="image-notes" /></div></section
+        ><section class="home-quote10"
+          ><div class="home-content12"
+            ><h2 class="home-quoted"
+              >“I love lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliquaation ullamco 100%.”</h2
+            ><div class="home-author10"
+              ><img
+                alt="image"
+                src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                class="home-icon24"
+              /><div class="home-details10"
+                ><span class="home-name10">Andy Smith</span
+                ><span class="home-from">(Founder OnConf)</span></div
+              ></div
+            ></div
+          ><img
+            alt="image"
+            src="public/quote-background.svg"
+            class="home-background3" /><img
+            alt="image"
+            src="public/quote-background.svg"
+            class="home-background4" /></section
+        ><section class="home-speakers"
+          ><div class="home-header13"
+            ><section-numeral-wrapper class="section-numeral-wrapper"
+              ><!--SectionNumeral component--><div
+                class="section-numeral-section-numeral"
+                ><div class="section-numeral-divide"></div
+                ><p class="section-numeral-text"><span>01</span></p></div
+              ></section-numeral-wrapper
+            ><div data-aos="fade-right" class="home-heading1"
+              ><h2 class="home-title10">Speakers</h2
+              ><p class="home-caption12"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.</p
+              ></div
+            ></div
+          ><div class="home-list2"
+            ><div class="home-row10"
+              ><div class="speaker"
+                ><speaker-wrapper
+                  class="speaker-wrapper"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker speakerroot-class-name"
+                    ><img
+                      alt="image"
+                      src="public/speakers-1-1500w.png"
+                      class="speaker-image"
+                    /><div class="speaker-deails"
+                      ><h3 class="speaker-name"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position"
+                        ><div class="speaker-point"></div
+                        ><span class="speaker-caption"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper
+                ><speaker-wrapper-nsah
+                  class="speaker-wrapper-nsah"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker1 speakerroot-class-name3"
+                    ><img
+                      alt="image"
+                      src="public/speakers-2-1500w.png"
+                      class="speaker-image1"
+                    /><div class="speaker-deails1"
+                      ><h3 class="speaker-name1"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position1"
+                        ><div class="speaker-point1"></div
+                        ><span class="speaker-caption1"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-nsah
+                ></div
+              ><div class="home-row12 speaker"
+                ><speaker-wrapper-mep4
+                  class="speaker-wrapper-mep4"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker2 speakerroot-class-name2"
+                    ><img
+                      alt="image"
+                      src="public/speakers-3-1500w.png"
+                      class="speaker-image2"
+                    /><div class="speaker-deails2"
+                      ><h3 class="speaker-name2"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position2"
+                        ><div class="speaker-point2"></div
+                        ><span class="speaker-caption2"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-mep4
+                ><speaker-wrapper-t2n8
+                  class="speaker-wrapper-t2n8"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker3 speakerroot-class-name1"
+                    ><img
+                      alt="image"
+                      src="public/speakers-4-1500w.png"
+                      class="speaker-image3"
+                    /><div class="speaker-deails3"
+                      ><h3 class="speaker-name3"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position3"
+                        ><div class="speaker-point3"></div
+                        ><span class="speaker-caption3"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-t2n8
+                ></div
+              ></div
+            ><div class="home-row13"
+              ><div class="home-row14 speaker"
+                ><speaker-wrapper-6rm1
+                  class="speaker-wrapper-6rm1"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker4 speakerroot-class-name13"
+                    ><img
+                      alt="image"
+                      src="public/speakers-4-1500w.png"
+                      class="speaker-image4"
+                    /><div class="speaker-deails4"
+                      ><h3 class="speaker-name4"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position4"
+                        ><div class="speaker-point4"></div
+                        ><span class="speaker-caption4"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-6rm1
+                ><speaker-wrapper-e5i9
+                  class="speaker-wrapper-e5i9"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker5 speakerroot-class-name12"
+                    ><img
+                      alt="image"
+                      src="public/speakers-3-1500w.png"
+                      class="speaker-image5"
+                    /><div class="speaker-deails5"
+                      ><h3 class="speaker-name5"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position5"
+                        ><div class="speaker-point5"></div
+                        ><span class="speaker-caption5"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-e5i9
+                ></div
+              ><div class="home-row15 speaker"
+                ><speaker-wrapper-q06w
+                  class="speaker-wrapper-q06w"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker6 speakerroot-class-name10"
+                    ><img
+                      alt="image"
+                      src="public/speakers-1-1500w.png"
+                      class="speaker-image6"
+                    /><div class="speaker-deails6"
+                      ><h3 class="speaker-name6"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position6"
+                        ><div class="speaker-point6"></div
+                        ><span class="speaker-caption6"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-q06w
+                ><speaker-wrapper-a487
+                  class="speaker-wrapper-a487"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker7 speakerroot-class-name11"
+                    ><img
+                      alt="image"
+                      src="public/speakers-2-1500w.png"
+                      class="speaker-image7"
+                    /><div class="speaker-deails7"
+                      ><h3 class="speaker-name7"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position7"
+                        ><div class="speaker-point7"></div
+                        ><span class="speaker-caption7"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-a487
+                ></div
+              ></div
+            ><div class="home-row16"
+              ><div class="home-row17 speaker"
+                ><speaker-wrapper-3rl6
+                  class="speaker-wrapper-3rl6"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker8 speakerroot-class-name15"
+                    ><img
+                      alt="image"
+                      src="public/speakers-2-1500w.png"
+                      class="speaker-image8"
+                    /><div class="speaker-deails8"
+                      ><h3 class="speaker-name8"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position8"
+                        ><div class="speaker-point8"></div
+                        ><span class="speaker-caption8"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-3rl6
+                ><speaker-wrapper-svxv
+                  class="speaker-wrapper-svxv"
+                  rootclassname="speakerundefined"
+                  ><!--Speaker component--><div
+                    class="speaker-speaker9 speakerroot-class-name14"
+                    ><img
+                      alt="image"
+                      src="public/speakers-1-1500w.png"
+                      class="speaker-image9"
+                    /><div class="speaker-deails9"
+                      ><h3 class="speaker-name9"
+                        ><span>Samantha Johnson</span></h3
+                      ><div class="speaker-position9"
+                        ><div class="speaker-point9"></div
+                        ><span class="speaker-caption9"
+                          ><span>CEO, Opary</span></span
+                        ></div
+                      ></div
+                    ></div
+                  ></speaker-wrapper-svxv
+                ></div
+              ><div class="home-row18 speaker"></div></div></div></section
+        ><section class="home-watch"
+          ><div class="home-content13"
+            ><h2 class="home-header14"
+              >Watch our Watch our OnConf 2022 trailer</h2
+            ><div class="home-video1"
+              ><video
+                src=""
+                poster="public/quotes-1-1400w.png"
+                class="home-video2"
+              ></video
+              ><img
+                alt="image"
+                src="public/play.svg"
+                class="home-image14" /></div
+            ><button class="button home-register5"
+              ><span>Register now</span
+              ><svg viewBox="0 0 1024 1024" class="home-icon25">
+                <path
+                  d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                ></path></svg></button></div
+          ><img
+            alt="image"
+            src="public/trailer-background.svg"
+            class="home-image15" /></section
+        ><section class="home-schedule"
+          ><div class="home-content14"
+            ><div class="home-header15"
+              ><div class="home-section-numeral1"
+                ><div class="home-divide1"></div
+                ><p class="home-text24">02</p></div
+              ><div data-aos="fade-right" class="home-heading2"
+                ><h2 class="home-title11">Schedule</h2
+                ><p class="home-caption13"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.</p
+                ></div
+              ></div
+            ><div class="home-main10"
+              ><div class="home-tab-selector"
+                ><div
+                  data-role="schedule-select"
+                  class="tab-active tab home-tab1"
+                  ><span class="home-text25">Friday, Nov 04</span></div
+                ><div data-role="schedule-select" class="tab home-tab2"
+                  ><span class="home-text26">Saturday, Nov 05</span></div
+                ><div data-role="schedule-select" class="tab home-tab3"
+                  ><span class="home-text27">Sunday, Nov 06</span></div
+                ></div
+              ><div class="home-lists"
+                ><section data-role="schedule-content" class="home-list3"
+                  ><div class="home-element10"
+                    ><div class="home-main11"
+                      ><span class="home-time10"
+                        >8:00 AM - 2:00 PM GMT +1 / 10:00 AM - 4:00 PM Your
+                        local time (6 Hours)</span
+                      ><h3 class="home-title12">Pre-event networking</h3
+                      ><div class="home-author11"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon27"
+                        /><div class="home-details11"
+                          ><span class="home-name11">Andy Smith</span
+                          ><div class="home-point12"></div
+                          ><span class="home-caption14">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button10"
+                      >Connect to chat room</button
+                    ></div
+                  ><div class="home-element11"
+                    ><div class="home-main12"
+                      ><span class="home-time11"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title13">How to Lorem Ipsum.</h3
+                      ><div class="home-author12"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon28"
+                        /><div class="home-details12"
+                          ><span class="home-name12">Samantha Johnson</span
+                          ><div class="home-point13"></div
+                          ><span class="home-caption15">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button11"
+                      ><span><span>See live</span><br /></span></button></div
+                  ><div class="home-element12"
+                    ><div class="home-main13"
+                      ><span class="home-time12"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title14">How to Lorem Ipsum.</h3
+                      ><div class="home-author13"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon29"
+                        /><div class="home-details13"
+                          ><span class="home-name13">Samantha Johnson</span
+                          ><div class="home-point14"></div
+                          ><span class="home-caption16">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button12"
+                      ><span><span>See live</span><br /></span></button></div
+                  ><div class="home-element13"
+                    ><div class="home-main14"
+                      ><span class="home-time13"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title15">How to Lorem Ipsum.</h3
+                      ><div class="home-author14"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon30"
+                        /><div class="home-details14"
+                          ><span class="home-name14">Samantha Johnson</span
+                          ><div class="home-point15"></div
+                          ><span class="home-caption17">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button13"
+                      ><span><span>See live</span><br /></span></button></div
+                  ><div class="home-element14"
+                    ><div class="home-main15"
+                      ><span class="home-time14"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title16">How to Lorem Ipsum.</h3
+                      ><div class="home-author15"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon31"
+                        /><div class="home-details15"
+                          ><span class="home-name15">Samantha Johnson</span
+                          ><div class="home-point16"></div
+                          ><span class="home-caption18">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button14"
+                      ><span><span>See live</span><br /></span></button></div
+                  ><div class="home-element15"
+                    ><div class="home-main16"
+                      ><span class="home-time15"
+                        >8:00 PM - 10:00 PM GMT +1 / 10:00 PM - 12:00 AM Your
+                        local time (2 Hours)</span
+                      ><h3 class="home-title17">Post-event networking</h3
+                      ><div class="home-author16"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDZ8fHBvdHJhaXR8ZW58MHx8fHwxNjcxNDg1OTU2&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon32"
+                        /><div class="home-details16"
+                          ><span class="home-name16">Samantha Johnson</span
+                          ><div class="home-point17"></div
+                          ><span class="home-caption19">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button15"
+                      ><span
+                        ><span>Connect to chat room</span
+                        ><br /></span></button></div></section
+                ><section data-role="schedule-content" class="home-list4"
+                  ><div class="home-element16"
+                    ><div class="home-main17"
+                      ><span class="home-time16"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title18">How to Lorem Ipsum.</h3
+                      ><div class="home-author17"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon33"
+                        /><div class="home-details17"
+                          ><span class="home-name17">Samantha Johnson</span
+                          ><div class="home-point18"></div
+                          ><span class="home-caption20">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button16"
+                      ><span><span>See live</span><br /></span></button></div
+                  ><div class="home-element17"
+                    ><div class="home-main18"
+                      ><span class="home-time17"
+                        >8:00 AM - 2:00 PM GMT +1 / 10:00 AM - 4:00 PM Your
+                        local time (6 Hours)</span
+                      ><h3 class="home-title19">Pre-event networking</h3
+                      ><div class="home-author18"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon34"
+                        /><div class="home-details18"
+                          ><span class="home-name18">Andy Smith</span
+                          ><div class="home-point19"></div
+                          ><span class="home-caption21">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button17"
+                      >Connect to chat room</button
+                    ></div
+                  ><div class="home-element18"
+                    ><div class="home-main19"
+                      ><span class="home-time18"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title20">How to Lorem Ipsum.</h3
+                      ><div class="home-author19"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon35"
+                        /><div class="home-details19"
+                          ><span class="home-name19">Samantha Johnson</span
+                          ><div class="home-point20"></div
+                          ><span class="home-caption22">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button18"
+                      ><span
+                        ><span>See live</span
+                        ><br /></span></button></div></section
+                ><section data-role="schedule-content" class="home-list5"
+                  ><div class="home-element19"
+                    ><div class="home-main20"
+                      ><span class="home-time19"
+                        >8:00 AM - 2:00 PM GMT +1 / 10:00 AM - 4:00 PM Your
+                        local time (6 Hours)</span
+                      ><h3 class="home-title21">Pre-event networking</h3
+                      ><div class="home-author20"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon36"
+                        /><div class="home-details20"
+                          ><span class="home-name20">Andy Smith</span
+                          ><div class="home-point21"></div
+                          ><span class="home-caption23">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button19"
+                      >Connect to chat room</button
+                    ></div
+                  ><div class="home-element20"
+                    ><div class="home-main21"
+                      ><span class="home-time20"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title22">How to Lorem Ipsum.</h3
+                      ><div class="home-author21"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon37"
+                        /><div class="home-details21"
+                          ><span class="home-name21">Samantha Johnson</span
+                          ><div class="home-point22"></div
+                          ><span class="home-caption24">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button20"
+                      ><span><span>See live</span><br /></span></button></div
+                  ><div class="home-element21"
+                    ><div class="home-main22"
+                      ><span class="home-time21"
+                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
+                        time (30 Minutes)</span
+                      ><h3 class="home-title23">How to Lorem Ipsum.</h3
+                      ><div class="home-author22"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon38"
+                        /><div class="home-details22"
+                          ><span class="home-name22">Samantha Johnson</span
+                          ><div class="home-point23"></div
+                          ><span class="home-caption25">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button21"
+                      ><span><span>See live</span><br /></span></button></div
+                  ><div class="home-element22"
+                    ><div class="home-main23"
+                      ><span class="home-time22"
+                        >8:00 PM - 10:00 PM GMT +1 / 10:00 PM - 12:00 AM Your
+                        local time (2 Hours)</span
+                      ><h3 class="home-title24">Post-event networking</h3
+                      ><div class="home-author23"
+                        ><img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDZ8fHBvdHJhaXR8ZW58MHx8fHwxNjcxNDg1OTU2&amp;ixlib=rb-4.0.3&amp;w=200"
+                          class="home-icon39"
+                        /><div class="home-details23"
+                          ><span class="home-name23">Samantha Johnson</span
+                          ><div class="home-point24"></div
+                          ><span class="home-caption26">CEO, Opary</span></div
+                        ></div
+                      ></div
+                    ><button class="button home-button22"
+                      ><span
+                        ><span>Connect to chat room</span
+                        ><br /></span></button></div></section></div
+              ><div
+                ><div class="home-container13"
+                  ><script>
+                    // Get all tab buttons
+                    const tabButtons = document.querySelectorAll('[data-role='schedule-select']');
+                    // Get all tab contents
+                    const tabContents = document.querySelectorAll('[data-role='schedule-content']');
+
+                    // Add 'tab-active' class to the first tab button
+                    tabButtons[0].classList.add('tab-active');
+                    // Show the first tab content
+                    tabContents[0].style.display = 'block';
+
+                    tabButtons.forEach((tabButton, index) => {
+                      tabButton.addEventListener('click', () => {
+                        // Remove 'tab-active' class from all tab buttons
+                        tabButtons.forEach((button) => {
+                          button.classList.remove('tab-active');
+                        });
+                        // Add 'tab-active' class to the current tab button
+                        tabButton.classList.add('tab-active');
+                        // Hide all tab contents
+                        tabContents.forEach((tabContent) => {
+                          tabContent.style.display = 'none';
+                        });
+                        // Show the tab content for the current tab button
+                        tabContents[index].style.display = 'block';
+                      });
+                    });
+                  </script></div
+                ></div
+              ></div
+            ></div
+          ></section
+        ><section class="home-sponsors"
+          ><div class="home-header16"
+            ><div class="home-section-numeral2"
+              ><div class="home-divide2"></div
+              ><p class="home-text58">03</p></div
+            ><div data-aos="fade-right" class="home-heading3"
+              ><h2 class="home-title25">Sponsors </h2
+              ><p class="home-caption27"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.</p
+              ></div
+            ></div
+          ><div class="home-brands1"
+            ><div class="brand"
+              ><img
+                alt="image"
+                src="public/brand-1.svg"
+                class="home-image16" /></div
+            ><div class="brand home-brand2"
+              ><img
+                alt="image"
+                src="public/brand-2.svg"
+                class="home-image17" /></div
+            ><div class="brand home-brand3"
+              ><img
+                alt="image"
+                src="public/brand-3.svg"
+                class="home-image18" /></div
+            ><div class="home-brand4 brand"
+              ><img
+                alt="image"
+                src="public/brand-4.svg"
+                class="home-image19" /></div
+            ><div class="home-brand5 brand"
+              ><img
+                alt="image"
+                src="public/brand-5.svg"
+                class="home-image20" /></div
+            ><div class="home-brand6 brand"
+              ><img
+                alt="image"
+                src="public/brand-6.svg"
+                class="home-image21" /></div
+            ><div class="home-brand7 brand"
+              ><img
+                alt="image"
+                src="public/brand-7.svg"
+                class="home-image22" /></div
+            ><div class="home-brand8 brand"
+              ><img
+                alt="image"
+                src="public/brand-8.svg"
+                class="home-image23" /></div></div></section
+        ><section class="home-why"
+          ><div class="home-header17"
+            ><div class="home-section-numeral3"
+              ><div class="home-divide3"></div
+              ><p class="home-text59">04</p></div
+            ><div data-aos="fade-right" class="home-heading4"
+              ><h2 class="home-title26">Why OnConf</h2
+              ><p class="home-caption28"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.</p
+              ></div
+            ></div
+          ><div class="home-brands2"
+            ><div class="home-row19"
+              ><div class="home-item1"
+                ><img
+                  alt="image"
+                  src="public/why-1.svg"
+                  class="home-image24"
+                /><div class="home-details24"
+                  ><h3 class="home-title27">Networking</h3
+                  ><p class="home-description10"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p></div
+                ></div
+              ><div class="home-item2"
+                ><img
+                  alt="image"
+                  src="public/why-2.svg"
+                  class="home-image25"
+                /><div class="home-details25"
+                  ><h3 class="home-title28">Learning</h3
+                  ><p class="home-description11"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p></div
+                ></div
+              ><div class="home-item3"
+                ><img
+                  alt="image"
+                  src="public/why-3.svg"
+                  class="home-image26"
+                /><div class="home-details26"
+                  ><h3 class="home-title29">Developing</h3
+                  ><p class="home-description12"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p></div
+                ></div
+              ></div
+            ></div
+          ></section
+        ><section class="home-black"
+          ><img
+            alt="image"
+            src="public/black-vector.svg"
+            class="home-image27"
+          /><section class="home-quotes1"
+            ><div class="home-row20"
+              ><img
+                alt="image"
+                src="public/quotes-1-1400w.png"
+                class="home-image28" /><div class="home-row21"
+                ><div class="home-details27"
+                  ><p class="home-quote11"
+                    >“Lorem ipsum dolor sit amet consectetur “</p
+                  ><span class="home-author24">The Guard</span></div
+                ><img
+                  alt="image"
+                  src="public/quotes-2-700w.png"
+                  class="home-image29" /></div></div
+            ><div class="home-row22"
+              ><div class="home-details28"
+                ><p class="home-quote12"
+                  >“Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                  amet“</p
+                ><span class="home-author25">Wall Street News</span></div
+              ><img
+                alt="image"
+                src="public/quotes-3-1400w.png"
+                class="home-image30"
+              /><div class="home-details29"
+                ><p class="home-quote13"
+                  >“Duis aute irure dolor in reprehenderit in voluptate velit
+                  “</p
+                ><span class="home-author26">Inside Business</span></div
+              ></div
+            ></section
+          ><section class="home-testimonials"
+            ><div class="home-header18"
+              ><div class="home-section-numeral4"
+                ><div class="home-divide4"></div
+                ><p class="home-text60">05</p></div
+              ><div data-aos="fade-right" class="home-heading5"
+                ><h2 class="home-title30"
+                  >Don’t just take our word for it. Here’s what past attendees
+                  have to say:</h2
+                ></div
+              ></div
+            ><div id="scrollbar" class="home-quotes2"
+              ><div class="home-quote14"
+                ><div class="home-author27"
+                  ><img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
+                    class="home-image31"
+                  /><div class="home-details30"
+                    ><span class="home-name24">Samantha Johnson</span
+                    ><span class="home-handle1">@thisissammy</span></div
+                  ></div
+                ><p class="home-quote15"
+                  >“Duis aute irure dolor in reprehenderit in voluptate
+                  velit.”</p
+                ></div
+              ><div class="home-quote16"
+                ><div class="home-author28"
+                  ><img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
+                    class="home-image32"
+                  /><div class="home-details31"
+                    ><span class="home-name25">Samantha Johnson</span
+                    ><span class="home-handle2">@thisissammy</span></div
+                  ></div
+                ><p class="home-quote17"
+                  >“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  ”</p
+                ></div
+              ><div class="home-quote18"
+                ><div class="home-author29"
+                  ><img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
+                    class="home-image33"
+                  /><div class="home-details32"
+                    ><span class="home-name26">Samantha Johnson</span
+                    ><span class="home-handle3">@thisissammy</span></div
+                  ></div
+                ><p class="home-quote19"
+                  >“Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea.”</p
+                ></div
+              ><div class="home-quote20"
+                ><div class="home-author30"
+                  ><img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
+                    class="home-image34"
+                  /><div class="home-details33"
+                    ><span class="home-name27">Samantha Johnson</span
+                    ><span class="home-handle4">@thisissammy</span></div
+                  ></div
+                ><p class="home-quote21"
+                  >“Duis aute irure dolor in reprehenderit in voluptate
+                  velit.”</p
+                ></div
+              ><div class="home-quote22"
+                ><div class="home-author31"
+                  ><img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
+                    class="home-image35"
+                  /><div class="home-details34"
+                    ><span class="home-name28">Samantha Johnson</span
+                    ><span class="home-handle5">@thisissammy</span></div
+                  ></div
+                ><p class="home-quote23"
+                  >“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  ”</p
+                ></div
+              ></div
+            ></section
+          ><section class="home-join"
+            ><h2 class="home-title31">Join us at OnConf on November 22-24 </h2
+            ><button class="home-button23 button"
+              ><span><span>Register now</span><br /></span></button></section
+          ><section class="home-more"
+            ><div class="home-header19"
+              ><div class="home-section-numeral5"
+                ><div class="home-divide5"></div
+                ><p class="home-text64">06</p></div
+              ><div data-aos="fade-right" class="home-heading6"
+                ><h2 class="home-title32"
+                  >More about pricing, accessibility or what this year’s event
+                  includes</h2
+                ></div
+              ></div
+            ><div class="home-accordions"
+              ><div class="home-accordion1"
+                ><div class="home-header20"
+                  ><div class="home-divide6"></div
+                  ><h3 class="home-title33">Event information</h3></div
+                ><div class="home-items1"
+                  ><div
+                    data-role="accordion-container"
+                    class="home-element23 accordion"
+                    ><div class="home-content15"
+                      ><span class="home-header21"
+                        >Esse cillum dolore eu fugiat nulla pariatur.</span
+                      ><span
+                        data-role="accordion-content"
+                        class="home-description13"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </span></div
+                    ><div class="home-icon-container1"
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-closed"
+                        class="home-icon40"
+                      >
+                        <path
+                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-open"
+                        class="home-icon42"
+                      >
+                        <path
+                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg></div></div
+                  ><div
+                    data-role="accordion-container"
+                    class="home-element24 accordion"
+                    ><div class="home-content16"
+                      ><span class="home-header22"
+                        >Esse cillum dolore eu fugiat nulla pariatur.</span
+                      ><span
+                        data-role="accordion-content"
+                        class="home-description14"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </span></div
+                    ><div class="home-icon-container2"
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-closed"
+                        class="home-icon44"
+                      >
+                        <path
+                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-open"
+                        class="home-icon46"
+                      >
+                        <path
+                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg></div></div
+                  ><div
+                    data-role="accordion-container"
+                    class="home-element25 accordion"
+                    ><div class="home-content17"
+                      ><span class="home-header23"
+                        >Esse cillum dolore eu fugiat nulla pariatur.</span
+                      ><span
+                        data-role="accordion-content"
+                        class="home-description15"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </span></div
+                    ><div class="home-icon-container3"
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-closed"
+                        class="home-icon48"
+                      >
+                        <path
+                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-open"
+                        class="home-icon50"
+                      >
+                        <path
+                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg></div></div></div></div
+              ><div class="home-accordion2"
+                ><div class="home-header24"
+                  ><div class="home-divide7"></div
+                  ><h3 class="home-title34">Event information</h3></div
+                ><div class="home-items2"
+                  ><div
+                    data-role="accordion-container"
+                    class="home-element26 accordion"
+                    ><div class="home-content18"
+                      ><span class="home-header25"
+                        >Esse cillum dolore eu fugiat nulla pariatur.</span
+                      ><span
+                        data-role="accordion-content"
+                        class="home-description16"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </span></div
+                    ><div class="home-icon-container4"
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-closed"
+                        class="home-icon52"
+                      >
+                        <path
+                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-open"
+                        class="home-icon54"
+                      >
+                        <path
+                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg></div></div
+                  ><div
+                    data-role="accordion-container"
+                    class="home-element27 accordion"
+                    ><div class="home-content19"
+                      ><span class="home-header26"
+                        >Esse cillum dolore eu fugiat nulla pariatur.</span
+                      ><span
+                        data-role="accordion-content"
+                        class="home-description17"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </span></div
+                    ><div class="home-icon-container5"
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-closed"
+                        class="home-icon56"
+                      >
+                        <path
+                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-open"
+                        class="home-icon58"
+                      >
+                        <path
+                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg></div></div
+                  ><div
+                    data-role="accordion-container"
+                    class="home-element28 accordion"
+                    ><div class="home-content20"
+                      ><span class="home-header27"
+                        >Esse cillum dolore eu fugiat nulla pariatur.</span
+                      ><span
+                        data-role="accordion-content"
+                        class="home-description18"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </span></div
+                    ><div class="home-icon-container6"
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-closed"
+                        class="home-icon60"
+                      >
+                        <path
+                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 1024 1024"
+                        data-role="accordion-icon-open"
+                        class="home-icon62"
+                      >
+                        <path
+                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path></svg></div></div></div></div
+              ><div
+                ><div class="home-container15"
+                  ><script>
+                    /*
+                     Accordion - Code Embed
+                     */
+                     const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                     const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                     const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                     const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                     accordionContents.forEach((accordionContent) => {
+                         accordionContent.style.display = 'none'; //Hides all accordion contents
+                     });
+
+                     accordionIconsClosed.forEach((icon) => {
+                       icon.style.display = 'flex'
+                     })
+
+                     accordionIconsOpen.forEach((icon) => {
+                       icon.style.display = 'none'
+                     })
+
+                     accordionContainers.forEach((accordionContainer, index) => {
+                         accordionContainer.addEventListener('click', () => {
+                             if (accordionContents[index].style.display === 'flex') {
+                                 // If the accordion is already open, close it
+                                 accordionContents[index].style.display = 'none';
+                                 accordionIconsClosed[index].style.display = 'flex';
+                                 accordionIconsOpen[index].style.display = 'none'
+                             } else {
+                                 // If the accordion is closed, open it
+                                 accordionContents.forEach((accordionContent) => {
+                                     accordionContent.style.display = 'none'; //Hides all accordion contents
+                                 });
+
+                                 accordionIconsClosed.forEach((accordionIcon) => {
+                                     accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                                 });
+
+                                 accordionIconsOpen.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'none';
+                                 })
+
+                                 accordionContents[index].style.display = 'flex'; // Shows accordion content
+                                 accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                                 accordionIconsOpen[index].style.display = 'flex';
+                             }
+                         });
+                     });
+                  </script>
+                </div></div
+              ></div
+            ></section
+          ></section
+        ><section class="home-subscribe"
+          ><div class="home-main24"
+            ><h2 class="home-header28"
+              >Subscribe to our newsletter for the latest OnConf news</h2
+            ><div class="home-content21"
+              ><div class="home-inputs"
+                ><input
+                  type="text"
+                  required=""
+                  placeholder="Name *"
+                  autocomplete="name"
+                  class="home-textinput1 input" /><input
+                  type="email"
+                  required=""
+                  placeholder="Email *"
+                  autocomplete="email"
+                  class="home-textinput2 input" /></div
+              ><span class="home-text65"
+                >By submitting, you agree to receive email communications from
+                OnConf, including upcoming promotions and discounted tickets,
+                news, and access to exclusive invite-only events.</span
+              ><button class="home-button24 button"
+                ><span
+                  ><span>Sign up for our newsletter</span
+                  ><br /></span></button></div></div></section
+        ><footer class="home-footer"
+          ><div class="home-content22"
+            ><div class="home-details35"
+              ><h2 class="home-title35">OnConf</h2
+              ><p class="home-description19"
+                >Product Calgary brings professionals together to connect, learn
+                from each other, find opportunities, and find talent. We started
+                as a meetup and have grown to be Alberta’s largest Product
+                Management community.</p
+              ></div
+            ><div class="home-socials"
+              ><img alt="image" src="public/linkedin.svg" class="social" /><a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link5"
+                ><img
+                  alt="image"
+                  src="public/instagram.svg"
+                  class="home-image37 social" /></a
+              ><a
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link6"
+                ><img
+                  alt="image"
+                  src="public/twitter.svg"
+                  class="home-image38 social" /></a></div
+            ><span class="home-copyright"
+              >Privacy — Terms &amp; Conditions — Code of Conduct © 2022 OnConf
+              All Rights Reserved</span
+            ></div
+          ></footer
+        ><div
+          ><div class="home-container17"
+            ><script>
+              ScrollReveal().reveal('.speaker');
+              ScrollReveal().reveal('.image-notes');
+            </script></div
+          ></div
+        ><div
+          ><div class="home-container19"
+            ><style>
+              #scrollbar::-webkit-scrollbar-track
+              {
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+              	border-radius: 10px;
+              	background-color: #F5F5F5;
+              }
+
+              #scrollbar::-webkit-scrollbar
+              {
+              	height: 12px;
+              	background-color: #F5F5F5;
+              	border-radius: 10px;
+              }
+
+              #scrollbar::-webkit-scrollbar-thumb
+              {
+              	border-radius: 10px;
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+              	background-color: #555;
+              }
+            </style></div
+          ></div
+        ></div
+      ></div
+    >
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script></body
+></html>
