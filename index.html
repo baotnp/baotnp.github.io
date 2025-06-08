@@ -1,1403 +1,2021 @@
-<!DOCTYPE html>
-<html lang="en"
-  ><head
-    ><title>OnConf template</title
-    ><meta property="og:title" content="OnConf template" /><meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    /><meta charset="utf-8" /><meta
-      property="twitter:card"
-      content="summary_large_image"
-    />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Source Sans Pro;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background: var(--dl-color-gray-white);
-
-        fill: var(--dl-color-gray-black);
-      }
-    </style>
+<!doctype html>
+<html
+  lang="en"
+  data-ws-project="98c8c5a7-324e-4749-b18a-666ce42d4072"
+  data-ws-last-published="2025-06-08T08:31:22.905Z"
+>
+  <head>
     <link
       rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+      type="text/css"
+      href="/assets/static/app_generated_index-6937cd5a.DCFMIyG-.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 16w, /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 32w, /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 48w, /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 64w, /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 96w, /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 128w, /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 256w, /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 384w"
+      imagesizes="100vw"
     />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
-      data-tag="font"
+      rel="preload"
+      as="image"
+      imagesrcset="/assets/App_zL4i8sX2SEd6S0cbYRfyr.png 16w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 32w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 48w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 64w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 96w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 128w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 256w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 384w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 640w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 750w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 828w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 1080w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 1200w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 1920w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 2048w, /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 3840w"
+      imagesizes="100vw"
+    />
+    <meta property="og:url" content="https://url/" />
+    <title>Boost your rankings with AI.</title>
+    <meta property="og:title" content="Boost your rankings with AI." />
+    <meta
+      name="description"
+      content="Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools."
+    />
+    <meta
+      property="og:description"
+      content="Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/logo_r1qaJQiri6sK3rPyq-Sar.svg" />
+    <link
+      rel="preload"
+      href="/assets/Inter-VariableFont_opsz_wght_5pWJ31-T_iPEwHdXmYt6P.ttf"
+      as="font"
+      crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+      rel="preload"
+      href="/assets/Group_1_3Lze2enBpFNP3rVOtd0Yp.svg"
+      as="image"
     />
+    <link
+      rel="preload"
+      href="/assets/App_Wide_2x_1_(2)_yiI7phUrEJxtQAVSp0ZeL.png"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/assets/Pattern_79YdcihVRk2R5H0fuZxz7.svg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/assets/App_Wide_2x_1_(1)_69MShZLi3pDA9oCPN794H.webp"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/assets/Group_1_(1)_WG8mUOjVoPgiB8j45YY9z.svg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/assets/Pricing_NtpbcNgAxOEKqt33rNA--.svg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/assets/Property_1_Desktop_WC1IMy9iiJ9vL4er9JyJM.webp"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="/assets/Icons_Zs8GOxaeJO22wgbZCoQDR.svg"
+      as="image"
+    />
+  </head>
+  <body class="w-body">
+    <div class="w-box">
+      <div style="display: contents">
+        <div style="display: contents">
+          <div class="w-html-embed">
+            <style>
+              /* So we don't need to add a token to every paragraph to remove margin. */
+              p {
+                margin: 0;
+              }
 
-    <script src="https://unpkg.com/scrollreveal"></script
-    ><script>
-      ScrollReveal({ reset: true });
-    </script></head
-  >
-  <body
-    ><link rel="stylesheet" href="./style.css" /><div
-      ><link href="./index.css" rel="stylesheet" /><div class="home-container10"
-        ><section class="home-hero"
-          ><div class="home-background1"
-            ><img
-              alt="image"
-              src="public/circle-background.svg"
-              class="home-image10" /><img
-              alt="image"
-              src="public/line-background.svg"
-              class="home-image11" /></div
-          ><header class="home-header10"
-            ><header data-thq="thq-navbar" class="home-navbar"
-              ><h2 class="home-text10">OnConf</h2
-              ><div
-                data-thq="thq-navbar-nav"
-                data-role="Nav"
-                class="home-desktop-menu"
-                ><nav
-                  data-thq="thq-navbar-nav-links"
-                  data-role="Nav"
-                  class="home-nav1"
-                  ><span class="navLink">Speakers</span
-                  ><span class="navLink">Schedule</span
-                  ><span class="navLink">Sponsors</span
-                  ><span class="navLink">Useful</span></nav
-                ><button class="button"
-                  ><span>Register now</span
-                  ><svg viewBox="0 0 1024 1024" class="home-icon10">
-                    <path
-                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-                    ></path></svg></button></div
-              ><div data-thq="thq-burger-menu" class="home-burger-menu"
-                ><svg viewBox="0 0 1024 1024" class="home-icon12">
-                  <path
-                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                  ></path></svg></div
-              ><div data-thq="thq-mobile-menu" class="home-mobile-menu"
+              /* * {
+                /* Make links scroll to their sections smoothly. */
+                scroll-behavior: smooth;
+              } */
+            </style>
+          </div>
+          <div class="w-html-embed">
+            <style>
+              :root {
+                --ani-duration: var(--duration-default, 0.2s);
+                --ani-delay: 0s;
+                --ani-slide-offset: 20%;
+                --ani-zoom-in-scale: 1;
+                --ani-zoom-out-scale: 0.85;
+                --ani-flip-rotate: 30deg;
+                --ani-easing: var(--easing-default, ease);
+                --ani-fill-mode: forwards;
+              }
+              [data-ani]:not([data-ani-children]),
+              [data-ani-children]:not([data-ani-progress]) > * {
+                animation-duration: var(--ani-duration);
+                animation-delay: var(--ani-delay);
+                animation-timing-function: var(--ani-easing);
+                animation-fill-mode: var(--ani-fill-mode);
+                opacity: 0;
+              }
+              [data-ani-progress]:not([data-ani-children]),
+              [data-ani-children]:not([data-ani]) > * {
+                transition-property: opacity, transform;
+                transition-duration: var(--ani-duration);
+                transition-timing-function: var(--ani-easing);
+                opacity: 0;
+              }
+              @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+              @keyframes fadeOut {
+                from {
+                  opacity: 1;
+                }
+                to {
+                  opacity: 0;
+                }
+              }
+              [data-ani-children][data-ani="fade"] > .in,
+              [data-ani="fade"]:where(
+                  .in:not([data-state]),
+                  [data-state$="open"],
+                  [data-state="active"]
+                ) {
+                animation-name: fadeIn;
+              }
+              [data-ani-children][data-ani="fade"] > .out,
+              [data-ani="fade"]:where(
+                  .out:not([data-state]),
+                  [data-state="closed"],
+                  [data-state="inactive"]
+                ) {
+                animation-name: fadeOut;
+              }
+              @keyframes slideIn {
+                from {
+                  opacity: 0;
+                  translate: var(--ani-slide-transform);
+                }
+                to {
+                  opacity: 1;
+                  translate: none;
+                }
+              }
+              @keyframes slideOut {
+                from {
+                  opacity: 1;
+                  translate: none;
+                }
+                to {
+                  opacity: 0;
+                  translate: var(--ani-slide-transform);
+                }
+              }
+              [data-ani-children][data-ani|="slide"] > .in,
+              [data-ani|="slide"]:where(
+                  .in:not([data-state]),
+                  [data-state$="open"],
+                  [data-state="active"]
+                ) {
+                animation-name: slideIn;
+              }
+              [data-ani-children][data-ani|="slide"] > .out,
+              [data-ani|="slide"]:where(
+                  .out:not([data-state]),
+                  [data-state="closed"],
+                  [data-state="inactive"]
+                ) {
+                animation-name: slideOut;
+              }
+              [data-ani="slide-up"] {
+                --ani-slide-transform: 0 var(--ani-slide-offset);
+              }
+              [data-ani="slide-down"] {
+                --ani-slide-transform: 0 calc(-1 * var(--ani-slide-offset));
+              }
+              [data-ani="slide-left"] {
+                --ani-slide-transform: var(--ani-slide-offset);
+              }
+              [data-ani="slide-right"] {
+                --ani-slide-transform: calc(-1 * var(--ani-slide-offset));
+              }
+              @keyframes zoomIn {
+                from {
+                  opacity: 0;
+                  scale: var(--ani-zoom-out-scale);
+                }
+                to {
+                  opacity: 1;
+                  scale: 1;
+                }
+              }
+              @keyframes zoomOut {
+                from {
+                  opacity: 1;
+                  scale: 1;
+                }
+                to {
+                  opacity: 0;
+                  scale: var(--ani-zoom-in-scale);
+                }
+              }
+              [data-ani-children][data-ani="zoom"] > .in,
+              [data-ani|="zoom"]:where(
+                  .in:not([data-state]),
+                  [data-state$="open"],
+                  [data-state="active"]
+                ) {
+                animation-name: zoomIn;
+              }
+              [data-ani-children][data-ani="zoom"] > .out,
+              [data-ani|="zoom"]:where(
+                  .out:not([data-state]),
+                  [data-state="closed"],
+                  [data-state="inactive"]
+                ) {
+                animation-name: zoomOut;
+              }
+              [data-ani-children][data-ani-progress="zoom"] > *,
+              [data-ani-progress="zoom"]:not([data-ani-children]) {
+                transform: scale(var(--ani-zoom-out-scale));
+              }
+              @keyframes flipInY {
+                from {
+                  rotate: y var(--ani-flip-rotate);
+                  perspective: 2000px;
+                  opacity: 0;
+                }
+                to {
+                  rotate: y 0;
+                  opacity: 1;
+                }
+              }
+              @keyframes flipOutY {
+                from {
+                  rotate: y 0;
+                  opacity: 1;
+                }
+                to {
+                  perspective: 2000px;
+                  rotate: y var(--ani-flip-rotate);
+                  opacity: 0;
+                }
+              }
+              @keyframes flipInX {
+                from {
+                  perspective: 2000px;
+                  rotate: x var(--ani-flip-rotate);
+                  opacity: 0;
+                }
+                to {
+                  rotate: x 0;
+                  opacity: 1;
+                }
+              }
+              @keyframes flipOutX {
+                from {
+                  rotate: x 0;
+                  opacity: 1;
+                }
+                to {
+                  perspective: 2000px;
+                  rotate: x var(--ani-flip-rotate);
+                  opacity: 0;
+                }
+              }
+              [data-ani-children][data-ani="flip-y"] > .in,
+              [data-ani="flip-y"]:where(
+                  .in:not([data-state]),
+                  [data-state$="open"],
+                  [data-state="active"]
+                ) {
+                animation-name: flipInY;
+              }
+              [data-ani-children][data-ani="flip-x"] > .in,
+              [data-ani="flip-x"]:where(
+                  .in:not([data-state]),
+                  [data-state$="open"],
+                  [data-state="active"]
+                ) {
+                animation-name: flipInX;
+              }
+              [data-ani-children][data-ani="flip-y"] > .out,
+              [data-ani="flip-y"]:where(
+                  .out:not([data-state]),
+                  [data-state="closed"],
+                  [data-state="inactive"]
+                ) {
+                animation-name: flipOutY;
+              }
+              [data-ani-children][data-ani="flip-x"] > .out,
+              [data-ani="flip-x"]:where(
+                  .out:not([data-state]),
+                  [data-state="closed"],
+                  [data-state="inactive"]
+                ) {
+                animation-name: flipOutX;
+              }
+              @keyframes expandDown {
+                from {
+                  height: 0;
+                }
+                to {
+                  height: var(--newHeight);
+                }
+              }
+              @keyframes expandUp {
+                from {
+                  height: var(--newHeight);
+                }
+                to {
+                  height: 0;
+                }
+              }
+              [data-ani="expand"],
+              [data-ani="expand"][data-state="open"],
+              [data-ani="expand"].in {
+                --newHeight: var(
+                  --custom-height,
+                  var(
+                    --radix-accordion-content-height,
+                    var(--radix-collapsible-content-height, 100%)
+                  )
+                );
+                overflow: hidden;
+                opacity: 1;
+              }
+              [data-ani-children][data-ani="expand"] > .in,
+              [data-ani="expand"]:where(
+                  .in:not([data-state]),
+                  [data-state$="open"],
+                  [data-state="active"]
+                ) {
+                animation: expandDown var(--ani-duration) var(--ani-easing);
+              }
+              [data-ani-children][data-ani="expand"] > .out,
+              [data-ani="expand"]:where(
+                  .out:not([data-state]),
+                  [data-state="closed"],
+                  [data-state="inactive"]
+                ) {
+                animation: expandUp var(--ani-duration) var(--ani-easing);
+              }
+              @media (prefers-reduced-motion: reduce) {
+                [data-ani]:not([data-ani-children]),
+                [data-ani-progress]:not([data-ani-children]),
+                [data-ani-children] > * {
+                  opacity: 1;
+                  transform: none;
+                  animation: none;
+                  rotate: none;
+                  scale: none;
+                  translate: none;
+                }
+              }
+            </style>
+          </div>
+          <header
+            class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lxiyww c1qyy4dh ct02u4h c1z0l37u c1ml0hr7 c1fd0kk1 c11gzs80 c1sche0c c1l2989r cjqo3r0 c1cvcmzo c3xzas1 c1n6cdq4 c1a5jpyh cymtqb c1fysxfs"
+          >
+            <div
+              class="w-box czr2pxy copqmak ct8c5y2 c10zkoym cignq8x cavd3zn c1tbut6b c1tzxl2z c16n19h8 cwqojdn c7klx50 c1qrxaqp cjkeggx c8pi8fa cow6lkx c1oxjrsz csud216 c1xiy5b1 cq7d8me c1ycnvnd"
+            >
+              <div style="display: contents">
+                <div style="display: contents">
+                  <a
+                    aria-label="Home"
+                    href="/"
+                    class="w-link c1pu3n16 cld4m44 c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p cl60rel c1ib9cr2 c1d7u282"
+                    ><img
+                      alt="logo"
+                      width="153"
+                      height="152"
+                      src="/assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png"
+                      class="w-image coe1sx2"
+                      sizes="100vw"
+                      srcset="
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  16w,
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  32w,
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  48w,
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  64w,
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  96w,
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 128w,
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 256w,
+                        /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 384w
+                      "
+                      decoding="async"
+                      loading="eager"
+                  /></a>
+                </div>
+              </div>
+              <nav
+                aria-label="main"
+                class="w-box c1mcu1jn cry9bxc c1qyy4dh ct02u4h c1lfjoq7 cgtnddv c1le23sj c40yjke c1kzn7na c17q2jvf ct49a6u c102r6kr c4sllhu clmbo8f cc3dq2t"
+              >
+                <div style="display: contents">
+                  <div style="display: contents">
+                    <nav
+                      aria-label="Main"
+                      data-orientation="horizontal"
+                      dir="ltr"
+                      class="w-navigation-menu c1cqu2xh cry9bxc cvblku1 c1xuq60h c1p217py c193ydh7 crglsme c14ip164 c1bkqfhr c1qyy4dh ct02u4h c13ldpkq c1gw84sn cjq768y c1le23sj c40yjke c1kzn7na c17q2jvf"
+                    >
+                      <div style="position: relative">
+                        <ul
+                          data-orientation="horizontal"
+                          class="w-menu-list cry9bxc c1fhkm63 cqeb86t c1admj5d c34dwh1 c1qyy4dh ct02u4h cdq89vd c1tcoltv c3qzgd0 c1y6imu0 c1n13r54 c1le23sj c40yjke c1kzn7na c17q2jvf c1gw84sn cjq768y"
+                          dir="ltr"
+                        >
+                          <li data-ws-index="0" class="w-menu-item">
+                            <button
+                              type="button"
+                              class="w-button catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                              id="radix-:R5m:-trigger-0"
+                              data-state="closed"
+                              aria-expanded="false"
+                              aria-controls="radix-:R5m:-content-0"
+                              data-radix-collection-item=""
+                            >
+                              <div class="w-text">Features</div>
+                              <div
+                                class="w-box c7ewoh2 c5m8ase clv8gve ch2prsz cg4iiql c7cjz93 c1c9nyn co9inq6 c18nx7en c13zjl4p"
+                              >
+                                <div class="w-html-embed">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                                    fill="currentColor"
+                                    width="100%"
+                                    height="100%"
+                                  >
+                                    <path
+                                      d="M4.04 6.284a.65.65 0 0 1 .92.001L8 9.335l3.04-3.05a.65.65 0 1 1 .921.918l-3.5 3.512a.65.65 0 0 1-.921 0L4.039 7.203a.65.65 0 0 1 .001-.92Z"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </button>
+                          </li>
+                          <li data-ws-index="1" class="w-menu-item">
+                            <a
+                              class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                              href="#"
+                              >Developers</a
+                            >
+                          </li>
+                          <li data-ws-index="2" class="w-menu-item">
+                            <button
+                              type="button"
+                              class="w-button catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                              id="radix-:R5m:-trigger-2"
+                              data-state="closed"
+                              aria-expanded="false"
+                              aria-controls="radix-:R5m:-content-2"
+                              data-radix-collection-item=""
+                            >
+                              <div class="w-text">Company</div>
+                              <div
+                                class="w-box c7ewoh2 c5m8ase clv8gve ch2prsz cg4iiql c7cjz93 c1c9nyn co9inq6 c18nx7en c13zjl4p"
+                              >
+                                <div class="w-html-embed">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                                    fill="currentColor"
+                                    width="100%"
+                                    height="100%"
+                                  >
+                                    <path
+                                      d="M4.04 6.284a.65.65 0 0 1 .92.001L8 9.335l3.04-3.05a.65.65 0 1 1 .921.918l-3.5 3.512a.65.65 0 0 1-.921 0L4.039 7.203a.65.65 0 0 1 .001-.92Z"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </div>
+                            </button>
+                          </li>
+                          <li data-ws-index="3" class="w-menu-item">
+                            <a
+                              class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                              href="#"
+                              >Blog</a
+                            >
+                          </li>
+                          <li data-ws-index="4" class="w-menu-item">
+                            <a
+                              class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                              href="#"
+                              >Changelog</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="w-box cdwd3jx c1lzcxwg cry9bxc ct02u4h cdtylqg chmjof8 czr2pxy c3xzas1 c1n6cdq4"
+                      ></div>
+                    </nav>
+                  </div>
+                </div>
+              </nav>
+              <div class="w-box cry9bxc c1qyy4dh ct02u4h cn6056e c1117wcl">
+                <div class="w-box">
+                  <div
+                    class="w-box c76ugon c1va7jp0 c18xibj9 ccn5ruk c6d3y84 cax3zcx c1le23sj c40yjke c1kzn7na c17q2jvf csugexd cciu1th co2lzyj cghs7z1 c18xchlu ckqzz7r"
+                  >
+                    <a
+                      class="w-link cnrz8fp c13b531o c1my01bv c14z1eqr c1ktl1y1 cr8yqfm c1ufwdzl c5blvcv cml0h3f c135vpv5 csru8nn c1qyy4dh ct02u4h c1md20bl c1e892th c1qom380 c10ldywu cbm6zv4 c1b1wvmf c1mcu1jn c1d7r856 cd3iwfe c1yhcvvf cwc6hbl c11r52nx czr2pxy c3pidkv c1kol985 cheslu6 cl60rel c1ib9cr2 cr2cdex"
+                      href="#"
+                      >Join waitlist</a
+                    >
+                  </div>
+                </div>
+                <div style="display: contents">
+                  <div style="display: contents">
+                    <button
+                      type="button"
+                      aria-label="Open mobile menu"
+                      class="w-button cnrz8fp ccfzz03 cub2gss cgcvr98 c1xjllne c135vpv5 cwvpjlf c1qyy4dh ct02u4h c1md20bl c1e892th c1qom380 c10ldywu cbm6zv4 c1b1wvmf c1mcu1jn c1d7r856 cd3iwfe c1yhcvvf cwc6hbl c11r52nx c1xty5yn c1g1x4wk cheslu6 c9x99qz cl60rel c1ib9cr2 cr2cdex c891fy0 c1k6tqmo c1bxqinn ckrlbpk c1oxjrsz csud216 c1xiy5b1 cq7d8me c149s0mc c1ycnvnd"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:Rnm:"
+                      data-state="closed"
+                    >
+                      <div class="w-html-embed">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 22 22"
+                          fill="currentColor"
+                          width="100%"
+                          height="100%"
+                          style="display: block"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M2 5.998a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 5.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Zm0 5.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+      <main class="w-box">
+        <section
+          class="w-box ch3bbj5 c1mzb2kd c1030opg c1cozyp5 crv1a4t cbrrmm8 cuo9dm5 c5egcmi cxz9xjl c1dz3al c1cl2zap c8qdjaz c1uc2zh c1l8rbde cq8dnu3 cth1c7d"
+        >
+          <div
+            class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g ceu66s9 c12ae6v5 c1fd0kk1 c11gzs80"
+          >
+            <div
+              class="w-box cry9bxc c1lfjoq7 ct8c5y2 c10zkoym c1qyy4dh c1wt8a7g"
+            >
+              <a
+                class="w-link c1pu3n16 csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p c1md20bl c1e892th c1qyy4dh ct02u4h cxk6kow conc6us c108v1a0 c81fpui coapalq c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t c12sm2j2 c135vpv5 ca7cv43 cl60rel c1ib9cr2 c1d7u282"
+                href="#"
                 ><div
-                  data-thq="thq-mobile-menu-nav"
-                  data-role="Nav"
-                  class="home-nav2"
-                  ><div class="home-container11"
-                    ><h2 class="home-text12">OnConf</h2
-                    ><div data-thq="thq-close-menu" class="home-menu-close"
-                      ><svg viewBox="0 0 1024 1024" class="home-icon14">
-                        <path
-                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                        ></path></svg></div></div
-                  ><nav
-                    data-thq="thq-mobile-menu-nav-links"
-                    data-role="Nav"
-                    class="home-nav3"
-                    ><span class="navLink home-text13">About</span
-                    ><span class="navLink home-text14">Features</span
-                    ><span class="navLink home-text15">Pricing</span
-                    ><span class="navLink home-text16">Team</span
-                    ><span class="navLink home-text17">Blog</span></nav
-                  ><div class="home-button-container"
-                    ><button class="home-login button">Login</button
-                    ><button class="button home-register2"
-                      >Register</button
-                    ></div
-                  ><div class="home-icon-group"
-                    ><div class="home-icons"
-                      ><svg
-                        viewBox="0 0 950.8571428571428 1024"
-                        class="home-icon16"
+                  class="w-text cl7jefz c341xsy c11dowh9 c1nj04wn c1nitjp7 c195lvp6 c1hr6a6t c7vx2dq c1mgacbo cff1ay0 c14z73t1 ci6yy9q c1plv2ab ckmcr2z"
+                >
+                  New
+                </div>
+                <div class="w-text">Latest integration</div></a
+              >
+              <h1
+                class="w-heading c11nr3ex cy1haag c32myit cwrra4i c4rpps8 c1d23h5a cnu4kgu c1yb3n9o cbrrmm8 cuo9dm5 c40zsbj c13cx24t c1my01bv c8itdy4 c74kosi c1qom380 c1357293 c9jnjeu c1dhz37v c1xzir7e"
+              >
+                Boost your<br />rankings with AI.
+              </h1>
+              <p
+                class="w-paragraph c16xpvrq c1qom380 c3fmn7t c1357293 c9jnjeu czt9u4x c1dhz37v"
+              >
+                Elevate your site’s visibility effortlessly with AI, where smart
+                technology meets user-friendly SEO tools.
+              </p>
+              <div
+                class="w-box c76ugon c1va7jp0 c18xibj9 ccn5ruk c6d3y84 cax3zcx c1le23sj c40yjke c1kzn7na c17q2jvf csugexd cciu1th co2lzyj cghs7z1 c18xchlu ckqzz7r"
+              >
+                <a
+                  class="w-link c1plv2ab c13b531o c1my01bv c14z1eqr c1ktl1y1 cr8yqfm c1ufwdzl c5blvcv cml0h3f c135vpv5 csru8nn c1qyy4dh ct02u4h c1md20bl c1e892th c1qom380 cn2jcgb cdcs8wy c1m1praz c1mcu1jn c1d7r856 cd3iwfe c1yhcvvf cwc6hbl c11r52nx cblpe2z cheslu6 cl60rel c1ib9cr2 c82bfcw c1ukphsi"
+                  href="#"
+                  >Start For Free</a
+                >
+              </div>
+            </div>
+            <div class="w-box">
+              <img
+                alt="Cover of dashboard"
+                width="2400"
+                height="1518"
+                src="/assets/App_zL4i8sX2SEd6S0cbYRfyr.png"
+                class="w-image"
+                sizes="100vw"
+                srcset="
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png   16w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png   32w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png   48w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png   64w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png   96w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png  128w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png  256w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png  384w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png  640w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png  750w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png  828w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 1080w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 1200w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 1920w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 2048w,
+                  /assets/App_zL4i8sX2SEd6S0cbYRfyr.png 3840w
+                "
+                decoding="async"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="w-box cna0hdz c1mzb2kd">
+          <div
+            class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1s46o9r cdczzub c1fd0kk1 c11gzs80"
+          >
+            <p
+              class="w-paragraph c16xpvrq c1qom380 c62q3t9 c1357293 c9jnjeu czt9u4x"
+            >
+              Trusted by the world’s most innovative teams
+            </p>
+            <div
+              class="w-box copqmak c10zkoym ct8c5y2 cori9ti cstj0zg c1vrexag cl5hb04 c174sw29 cas7ks9 c155h8oe cw7dtlx czsotsp"
+            >
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg  16w,
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg  32w,
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg  48w,
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg  64w,
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg  96w,
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg 128w,
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg 256w,
+                    /assets/acme_1_SzGM5wv_nXoJMNsxf3nMp.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg  16w,
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg  32w,
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg  48w,
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg  64w,
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg  96w,
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg 128w,
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg 256w,
+                    /assets/acme_1_6gLv7ufQMzdLOOclvrYwV.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg  16w,
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg  32w,
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg  48w,
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg  64w,
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg  96w,
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg 128w,
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg 256w,
+                    /assets/acme_1_HLWJfcLQuEP3J64rb6XKM.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg  16w,
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg  32w,
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg  48w,
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg  64w,
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg  96w,
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg 128w,
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg 256w,
+                    /assets/acme_1_XA71WcU5185wrE6Mu6zhG.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg  16w,
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg  32w,
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg  48w,
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg  64w,
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg  96w,
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg 128w,
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg 256w,
+                    /assets/acme_1_nw5epIpabXJ3uVi7QFcyc.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg  16w,
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg  32w,
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg  48w,
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg  64w,
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg  96w,
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg 128w,
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg 256w,
+                    /assets/acme_1_uRdPm_9MYPZFZIQuEn4OC.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg  16w,
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg  32w,
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg  48w,
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg  64w,
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg  96w,
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg 128w,
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg 256w,
+                    /assets/acme_1_tpqwq_LcM0bL22Ua7rhwu.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cc9xhl5 c1nvgabo c1u0yu0y c1i2rq6e c12n5uks csb0ifw cg5j03k c8od1c4 czr2pxy c1bkqfhr cry9bxc c1qyy4dh ct02u4h c6d3y84 c1w2ebm1 cscr3j6 c1380t7s c1yvubyx cbxwzfl ckdqtrq c1qpskvc c1qoie81"
+              >
+                <img
+                  alt="Company logo"
+                  width="155"
+                  height="34"
+                  src="/assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg"
+                  class="w-image coejy3h c1fhiulb c1av00hf cji8cjn"
+                  sizes="100vw"
+                  srcset="
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg  16w,
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg  32w,
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg  48w,
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg  64w,
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg  96w,
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg 128w,
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg 256w,
+                    /assets/acme_1_tLX2aRXdIM-NXgBcKFoRh.svg 384w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-box cna0hdz c1mzb2kd">
+          <div
+            class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1s46o9r cdczzub c1fd0kk1 c11gzs80"
+          >
+            <h2
+              class="w-heading c1dxq9cf cy1haag c32myit cwrra4i c12y6bqh c1mpwk4w c74kosi c1qom380 c1357293 c9jnjeu c1dhz37v"
+            >
+              Harness the power of AI, making search engine optimization
+              intuitive and effective for all skill levels.
+            </h2>
+            <div
+              class="w-box copqmak c10zkoym ct8c5y2 cejtdrx co2qwzx c1vrexag cx6c9kw c174sw29"
+            >
+              <div
+                class="w-box cry9bxc c1lfjoq7 c18v2pa2 c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam cg37ob1 ce02iuh c15hexcm"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <img
+                    alt="3d object"
+                    width="530"
+                    height="412"
+                    src="/assets/Visual_92J8YkAjOrgi5wnfkiE2L.png"
+                    class="w-image"
+                    sizes="100vw"
+                    srcset="
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png   16w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png   32w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png   48w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png   64w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png   96w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png  128w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png  256w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png  384w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png  640w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png  750w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png  828w,
+                      /assets/Visual_92J8YkAjOrgi5wnfkiE2L.png 1080w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <h3
+                    class="w-heading cuoke4w c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    SEO Goal Setting
+                  </h3>
+                  <p class="w-paragraph">
+                    Helps you set and achieve SEO goals with guided assistance.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1t3frhm c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam cg37ob1 czx9unu cn1jd01 c12hsjsj c1ru090q c1syziaj c119suh8 cx97dnn c19wkfj2 colzpbp ce02iuh c15hexcm cyhujw8 c1l2ougi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <h3
+                    class="w-heading cuoke4w c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    User-friendly dashboard
+                  </h3>
+                  <p class="w-paragraph">
+                    Perform complex SEO audits and optimizations with a single
+                    click.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1t3frhm c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam cg37ob1 c28cf7m c5zb6ju c12hsjsj c1ru090q c1syziaj c119suh8 cx97dnn c19wkfj2 colzpbp ce02iuh c15hexcm c1axwber c1l2ougi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <h3
+                    class="w-heading cuoke4w c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    Visual reports
+                  </h3>
+                  <p class="w-paragraph">
+                    Visual insights into your site’s performance.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c18v2pa2 c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam cg37ob1 ce02iuh c15hexcm"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <img
+                    alt="3d object"
+                    width="468"
+                    height="468"
+                    src="/assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png"
+                    class="w-image"
+                    sizes="100vw"
+                    srcset="
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png   16w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png   32w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png   48w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png   64w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png   96w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png  128w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png  256w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png  384w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png  640w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png  750w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png  828w,
+                      /assets/Visual_(1)__5uTpyEh4NIm5XedfvE3T.png 1080w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <h3
+                    class="w-heading cuoke4w c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    Smart Keyword Generator
+                  </h3>
+                  <p class="w-paragraph">
+                    Automatic suggestions and the best keywords to target.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-box cna0hdz c1mzb2kd cblbfaz cnu4kgu c1yb3n9o cbrrmm8 cuo9dm5 c5egcmi c1xzir7e"
+        >
+          <div
+            class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1s46o9r cdczzub c1fd0kk1 c11gzs80"
+          >
+            <h2
+              class="w-heading c1dxq9cf cy1haag c32myit cwrra4i c12y6bqh c1mpwk4w"
+            >
+              Elevate your SEO efforts.
+            </h2>
+            <div
+              class="w-box copqmak c1s46o9r c162t7yy cejtdrx co2qwzx c1vrexag cx6c9kw c174sw29"
+            >
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 877.7142857142857 1024"
-                        class="home-icon18"
+                          d="M12.9412 5.0419C12.2931 4.39231 11.5228 3.87744 10.6747 3.527C9.82668 3.17655 8.91762 2.99745 8 3.00003H7.975C4.12937 3.01315 1 6.18753 1 10.0707V11.5C1 11.7652 1.10536 12.0196 1.29289 12.2071C1.48043 12.3947 1.73478 12.5 2 12.5H14C14.2652 12.5 14.5196 12.3947 14.7071 12.2071C14.8946 12.0196 15 11.7652 15 11.5V10C15.0026 9.07839 14.8219 8.16544 14.4684 7.31426C14.115 6.46307 13.5959 5.69065 12.9412 5.0419ZM14 11.5H7.48187L10.9044 6.79378C10.9824 6.68653 11.0147 6.55266 10.9941 6.42162C10.9735 6.29058 10.9016 6.1731 10.7944 6.09503C10.6871 6.01695 10.5533 5.98468 10.4222 6.00531C10.2912 6.02594 10.1737 6.09778 10.0956 6.20503L6.245 11.5H2V10.0707C2 9.87815 2.00937 9.68815 2.02688 9.50003H3.5C3.63261 9.50003 3.75979 9.44735 3.85355 9.35358C3.94732 9.25981 4 9.13264 4 9.00003C4 8.86742 3.94732 8.74024 3.85355 8.64647C3.75979 8.55271 3.63261 8.50003 3.5 8.50003H2.20438C2.84938 6.07128 4.95438 4.23503 7.5 4.02128V5.50003C7.5 5.63264 7.55268 5.75981 7.64645 5.85358C7.74021 5.94735 7.86739 6.00003 8 6.00003C8.13261 6.00003 8.25979 5.94735 8.35355 5.85358C8.44732 5.75981 8.5 5.63264 8.5 5.50003V4.02065C9.74041 4.12504 10.9178 4.61209 11.8694 5.4145C12.8211 6.21692 13.5001 7.29508 13.8125 8.50003H12.5C12.3674 8.50003 12.2402 8.55271 12.1464 8.64647C12.0527 8.74024 12 8.86742 12 9.00003C12 9.13264 12.0527 9.25981 12.1464 9.35358C12.2402 9.44735 12.3674 9.50003 12.5 9.50003H13.9794C13.9925 9.66565 14 9.8319 14 10V11.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">User-Friendly Dashboard</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Perform complex SEO audits and optimizations with a single
+                    click.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 602.2582857142856 1024"
-                        class="home-icon20"
+                          d="M14.5 13.5C14.5 13.6326 14.4473 13.7598 14.3536 13.8536C14.2598 13.9473 14.1326 14 14 14H2C1.86739 14 1.74021 13.9473 1.64645 13.8536C1.55268 13.7598 1.5 13.6326 1.5 13.5V3.5C1.5 3.36739 1.55268 3.24021 1.64645 3.14645C1.74021 3.05268 1.86739 3 2 3C2.13261 3 2.25979 3.05268 2.35355 3.14645C2.44732 3.24021 2.5 3.36739 2.5 3.5V9.39812L5.67063 6.625C5.7569 6.54947 5.86652 6.5059 5.9811 6.50157C6.09569 6.49725 6.20828 6.53244 6.3 6.60125L9.97563 9.35812L13.6706 6.125C13.7191 6.07704 13.7768 6.0395 13.8403 6.01467C13.9038 5.98985 13.9717 5.97827 14.0398 5.98065C14.1079 5.98303 14.1749 5.99931 14.2365 6.0285C14.2981 6.05769 14.3531 6.09917 14.398 6.15038C14.443 6.2016 14.4771 6.26148 14.4981 6.32633C14.5191 6.39119 14.5266 6.45965 14.5201 6.52752C14.5137 6.59538 14.4935 6.66122 14.4607 6.72097C14.4279 6.78073 14.3832 6.83314 14.3294 6.875L10.3294 10.375C10.2431 10.4505 10.1335 10.4941 10.0189 10.4984C9.90431 10.5028 9.79173 10.4676 9.7 10.3988L6.02437 7.64313L2.5 10.7269V13H14C14.1326 13 14.2598 13.0527 14.3536 13.1464C14.4473 13.2402 14.5 13.3674 14.5 13.5Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">Visual Reports</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Visual insights into your site’s performance.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                        ></path></svg></div></div></div
-                ><img
-                  alt="image"
-                  src="public/quote-background.svg"
-                  class="home-background2" /></div></header></header
-          ><div class="home-hero-content"
-            ><h1 class="home-text18">World's Largest Online Conference</h1
-            ><div class="home-caption10"
-              ><button class="button-style-1 button home-register3"
-                ><span class="home-text19">Register now</span></button
-              ><p class="home-caption11"
-                >22—24 November 2023 / OnConf.template</p
-              ></div
-            ></div
-          ></section
-        ><section class="home-notes"
-          ><div class="home-first"
-            ><div data-aos="fade-up-right" class="home-content10"
-              ><h2 class="home-header11"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod. </h2
-              ><div class="home-list1"
-                ><div class="home-note1"
-                  ><div class="home-point10"></div
-                  ><p class="home-text20"
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.</p
-                  ></div
-                ><div class="home-note2"
-                  ><div class="home-point11"></div
-                  ><p class="home-text21"
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</p
-                  ></div
-                ></div
-              ></div
+                          d="M12.3487 8.56625L9.12498 7.375L7.93748 4.14875C7.86716 3.95771 7.73992 3.79283 7.57295 3.67637C7.40598 3.5599 7.2073 3.49746 7.00373 3.49746C6.80015 3.49746 6.60147 3.5599 6.4345 3.67637C6.26753 3.79283 6.1403 3.95771 6.06998 4.14875L4.87498 7.375L1.64873 8.5625C1.45768 8.63282 1.29281 8.76005 1.17634 8.92702C1.05988 9.094 0.997437 9.29267 0.997437 9.49625C0.997437 9.69983 1.05988 9.8985 1.17634 10.0655C1.29281 10.2324 1.45768 10.3597 1.64873 10.43L4.87498 11.625L6.06248 14.8512C6.1328 15.0423 6.26003 15.2072 6.427 15.3236C6.59397 15.4401 6.79265 15.5025 6.99623 15.5025C7.1998 15.5025 7.39848 15.4401 7.56545 15.3236C7.73242 15.2072 7.85965 15.0423 7.92998 14.8512L9.12498 11.625L12.3512 10.4375C12.5423 10.3672 12.7071 10.2399 12.8236 10.073C12.9401 9.906 13.0025 9.70733 13.0025 9.50375C13.0025 9.30017 12.9401 9.1015 12.8236 8.93452C12.7071 8.76755 12.5423 8.64032 12.3512 8.57L12.3487 8.56625ZM8.56248 10.7638C8.49461 10.7888 8.43297 10.8282 8.38183 10.8793C8.33068 10.9305 8.29124 10.9921 8.26623 11.06L6.99998 14.4906L5.73623 11.0625C5.71125 10.9939 5.67157 10.9316 5.61996 10.88C5.56835 10.8284 5.50606 10.7887 5.43748 10.7638L2.00935 9.5L5.43748 8.23625C5.50606 8.21128 5.56835 8.17159 5.61996 8.11998C5.67157 8.06837 5.71125 8.00608 5.73623 7.9375L6.99998 4.50938L8.26373 7.9375C8.28874 8.00537 8.32818 8.067 8.37933 8.11815C8.43047 8.1693 8.49211 8.20874 8.55998 8.23375L11.9906 9.5L8.56248 10.7638ZM8.99998 3C8.99998 2.86739 9.05266 2.74021 9.14642 2.64645C9.24019 2.55268 9.36737 2.5 9.49998 2.5H10.5V1.5C10.5 1.36739 10.5527 1.24021 10.6464 1.14645C10.7402 1.05268 10.8674 1 11 1C11.1326 1 11.2598 1.05268 11.3535 1.14645C11.4473 1.24021 11.5 1.36739 11.5 1.5V2.5H12.5C12.6326 2.5 12.7598 2.55268 12.8535 2.64645C12.9473 2.74021 13 2.86739 13 3C13 3.13261 12.9473 3.25979 12.8535 3.35355C12.7598 3.44732 12.6326 3.5 12.5 3.5H11.5V4.5C11.5 4.63261 11.4473 4.75979 11.3535 4.85355C11.2598 4.94732 11.1326 5 11 5C10.8674 5 10.7402 4.94732 10.6464 4.85355C10.5527 4.75979 10.5 4.63261 10.5 4.5V3.5H9.49998C9.36737 3.5 9.24019 3.44732 9.14642 3.35355C9.05266 3.25979 8.99998 3.13261 8.99998 3ZM15.5 6C15.5 6.13261 15.4473 6.25979 15.3535 6.35355C15.2598 6.44732 15.1326 6.5 15 6.5H14.5V7C14.5 7.13261 14.4473 7.25979 14.3535 7.35355C14.2598 7.44732 14.1326 7.5 14 7.5C13.8674 7.5 13.7402 7.44732 13.6464 7.35355C13.5527 7.25979 13.5 7.13261 13.5 7V6.5H13C12.8674 6.5 12.7402 6.44732 12.6464 6.35355C12.5527 6.25979 12.5 6.13261 12.5 6C12.5 5.86739 12.5527 5.74021 12.6464 5.64645C12.7402 5.55268 12.8674 5.5 13 5.5H13.5V5C13.5 4.86739 13.5527 4.74021 13.6464 4.64645C13.7402 4.55268 13.8674 4.5 14 4.5C14.1326 4.5 14.2598 4.55268 14.3535 4.64645C14.4473 4.74021 14.5 4.86739 14.5 5V5.5H15C15.1326 5.5 15.2598 5.55268 15.3535 5.64645C15.4473 5.74021 15.5 5.86739 15.5 6Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">SEO Goal Setting</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Helps you set and achieve SEO goals with guided assistance.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14 8.50003C14 8.63264 13.9473 8.75982 13.8536 8.85359C13.7598 8.94736 13.6326 9.00003 13.5 9.00003H8C7.86739 9.00003 7.74022 8.94736 7.64645 8.85359C7.55268 8.75982 7.5 8.63264 7.5 8.50003C7.5 8.36743 7.55268 8.24025 7.64645 8.14648C7.74022 8.05271 7.86739 8.00003 8 8.00003H13.5C13.6326 8.00003 13.7598 8.05271 13.8536 8.14648C13.9473 8.24025 14 8.36743 14 8.50003ZM8 5.00003H13.5C13.6326 5.00003 13.7598 4.94736 13.8536 4.85359C13.9473 4.75982 14 4.63264 14 4.50003C14 4.36743 13.9473 4.24025 13.8536 4.14648C13.7598 4.05271 13.6326 4.00003 13.5 4.00003H8C7.86739 4.00003 7.74022 4.05271 7.64645 4.14648C7.55268 4.24025 7.5 4.36743 7.5 4.50003C7.5 4.63264 7.55268 4.75982 7.64645 4.85359C7.74022 4.94736 7.86739 5.00003 8 5.00003ZM13.5 12H8C7.86739 12 7.74022 12.0527 7.64645 12.1465C7.55268 12.2402 7.5 12.3674 7.5 12.5C7.5 12.6326 7.55268 12.7598 7.64645 12.8536C7.74022 12.9474 7.86739 13 8 13H13.5C13.6326 13 13.7598 12.9474 13.8536 12.8536C13.9473 12.7598 14 12.6326 14 12.5C14 12.3674 13.9473 12.2402 13.8536 12.1465C13.7598 12.0527 13.6326 12 13.5 12ZM5.14625 3.14628L3.5 4.79316L2.85375 4.14628C2.75993 4.05246 2.63269 3.99976 2.5 3.99976C2.36732 3.99976 2.24007 4.05246 2.14625 4.14628C2.05243 4.2401 1.99973 4.36735 1.99973 4.50003C1.99973 4.63272 2.05243 4.75996 2.14625 4.85378L3.14625 5.85378C3.19269 5.90027 3.24783 5.93715 3.30853 5.96231C3.36923 5.98748 3.4343 6.00043 3.5 6.00043C3.56571 6.00043 3.63077 5.98748 3.69147 5.96231C3.75217 5.93715 3.80732 5.90027 3.85375 5.85378L5.85375 3.85378C5.94757 3.75996 6.00028 3.63272 6.00028 3.50003C6.00028 3.36735 5.94757 3.2401 5.85375 3.14628C5.75993 3.05246 5.63269 2.99976 5.5 2.99976C5.36732 2.99976 5.24007 3.05246 5.14625 3.14628ZM5.14625 7.14628L3.5 8.79316L2.85375 8.14628C2.75993 8.05246 2.63269 7.99976 2.5 7.99976C2.36732 7.99976 2.24007 8.05246 2.14625 8.14628C2.05243 8.2401 1.99973 8.36735 1.99973 8.50003C1.99973 8.56573 2.01267 8.63079 2.03781 8.69148C2.06295 8.75218 2.0998 8.80733 2.14625 8.85378L3.14625 9.85378C3.19269 9.90027 3.24783 9.93715 3.30853 9.96231C3.36923 9.98748 3.4343 10.0004 3.5 10.0004C3.56571 10.0004 3.63077 9.98748 3.69147 9.96231C3.75217 9.93715 3.80732 9.90027 3.85375 9.85378L5.85375 7.85378C5.94757 7.75996 6.00028 7.63272 6.00028 7.50003C6.00028 7.36735 5.94757 7.2401 5.85375 7.14628C5.75993 7.05246 5.63269 6.99976 5.5 6.99976C5.36732 6.99976 5.24007 7.05246 5.14625 7.14628ZM5.14625 11.1463L3.5 12.7932L2.85375 12.1463C2.8073 12.0998 2.75215 12.063 2.69145 12.0378C2.63076 12.0127 2.5657 11.9998 2.5 11.9998C2.43431 11.9998 2.36925 12.0127 2.30856 12.0378C2.24786 12.063 2.19271 12.0998 2.14625 12.1463C2.0998 12.1927 2.06295 12.2479 2.03781 12.3086C2.01267 12.3693 1.99973 12.4343 1.99973 12.5C1.99973 12.5657 2.01267 12.6308 2.03781 12.6915C2.06295 12.7522 2.0998 12.8073 2.14625 12.8538L3.14625 13.8538C3.19269 13.9003 3.24783 13.9372 3.30853 13.9623C3.36923 13.9875 3.4343 14.0004 3.5 14.0004C3.56571 14.0004 3.63077 13.9875 3.69147 13.9623C3.75217 13.9372 3.80732 13.9003 3.85375 13.8538L5.85375 11.8538C5.94757 11.76 6.00028 11.6327 6.00028 11.5C6.00028 11.3674 5.94757 11.2401 5.85375 11.1463C5.75993 11.0525 5.63269 10.9998 5.5 10.9998C5.36732 10.9998 5.24007 11.0525 5.14625 11.1463Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">Content Evaluation</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Simple corrections for immediate improvements.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.8669 5.6975C14.5607 7.14863 14.6924 8.80533 14.2366 10.3479C13.7808 11.8904 12.7697 13.2094 11.3986 14.0503C10.0274 14.8912 8.39342 15.1944 6.81186 14.9014C5.23031 14.6084 3.81335 13.74 2.83445 12.4637C1.85556 11.1874 1.38413 9.59372 1.51114 7.99027C1.63816 6.38683 2.35462 4.88727 3.52225 3.78101C4.68987 2.67474 6.22589 2.0402 7.83386 1.99985C9.44182 1.9595 11.0077 2.5162 12.2294 3.5625L13.6463 2.145C13.7401 2.05118 13.8673 1.99848 14 1.99848C14.1327 1.99848 14.2599 2.05118 14.3538 2.145C14.4476 2.23882 14.5003 2.36607 14.5003 2.49875C14.5003 2.63144 14.4476 2.75868 14.3538 2.8525L8.35375 8.8525C8.25993 8.94633 8.13268 8.99903 8 8.99903C7.86732 8.99903 7.74007 8.94633 7.64625 8.8525C7.55243 8.75868 7.49972 8.63144 7.49972 8.49875C7.49972 8.36607 7.55243 8.23882 7.64625 8.145L9.37875 6.4125C8.90922 6.10198 8.34863 5.959 7.78773 6.00672C7.22683 6.05444 6.69845 6.29007 6.28813 6.67546C5.87781 7.06084 5.60957 7.57343 5.52682 8.13024C5.44408 8.68705 5.55168 9.2555 5.8322 9.74355C6.11272 10.2316 6.54975 10.6107 7.07253 10.8194C7.59532 11.0282 8.17326 11.0544 8.7128 10.8939C9.25234 10.7333 9.72189 10.3953 10.0454 9.93466C10.369 9.47401 10.5276 8.91765 10.4956 8.35563C10.4919 8.28997 10.5012 8.22422 10.5229 8.16215C10.5446 8.10007 10.5784 8.04288 10.6222 7.99384C10.666 7.9448 10.7191 7.90487 10.7783 7.87633C10.8376 7.84779 10.9018 7.8312 10.9675 7.8275C11.1001 7.82005 11.2303 7.86557 11.3293 7.95406C11.3783 7.99788 11.4183 8.05093 11.4468 8.11018C11.4753 8.16943 11.4919 8.23372 11.4956 8.29938C11.5412 9.09487 11.314 9.8821 10.8516 10.531C10.3891 11.1798 9.71911 11.6515 8.95229 11.868C8.18547 12.0844 7.36774 12.0328 6.63425 11.7216C5.90075 11.4103 5.29541 10.8581 4.91826 10.1563C4.54112 9.45439 4.41475 8.64483 4.56004 7.86139C4.70533 7.07796 5.11359 6.36755 5.71734 5.84758C6.32108 5.32762 7.08418 5.02921 7.88049 5.0017C8.67681 4.97418 9.45868 5.2192 10.0969 5.69625L11.5188 4.27438C10.4768 3.40925 9.15186 2.95961 7.79854 3.0118C6.44521 3.064 5.15889 3.61436 4.18662 4.55717C3.21435 5.49999 2.62469 6.76878 2.5309 8.11985C2.43711 9.47093 2.8458 10.809 3.67848 11.8771C4.51115 12.9453 5.70909 13.6681 7.04222 13.9067C8.37535 14.1454 9.74967 13.8832 10.9012 13.1703C12.0527 12.4575 12.9003 11.3443 13.2811 10.0446C13.6619 8.7449 13.5491 7.35034 12.9644 6.12875C12.9072 6.00908 12.8999 5.87158 12.9441 5.74652C12.9883 5.62145 13.0803 5.51907 13.2 5.46188C13.3197 5.40469 13.4572 5.39739 13.5822 5.44158C13.7073 5.48577 13.8097 5.57783 13.8669 5.6975Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">One-Click Optimization</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Perform complex SEO audits and optimizations with a single
+                    click.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14 4.94376C13.8823 5.00471 13.7452 5.01644 13.6189 4.97635C13.4925 4.93627 13.3873 4.84767 13.3262 4.73001C12.849 3.7872 12.1266 2.99033 11.235 2.42314C11.1794 2.38809 11.1313 2.34245 11.0934 2.2888C11.0554 2.23516 11.0285 2.17457 11.0139 2.1105C10.9994 2.04643 10.9977 1.98012 11.0088 1.91538C11.0199 1.85063 11.0437 1.78871 11.0787 1.73314C11.1138 1.67757 11.1594 1.62946 11.2131 1.59153C11.2667 1.55361 11.3273 1.52662 11.3914 1.51211C11.4554 1.4976 11.5217 1.49585 11.5865 1.50697C11.6512 1.51808 11.7132 1.54184 11.7687 1.57689C12.8078 2.24222 13.6516 3.17162 14.2137 4.27001C14.2747 4.38771 14.2864 4.5248 14.2463 4.65114C14.2062 4.77747 14.1176 4.88273 14 4.94376ZM2.23185 5.00001C2.32345 4.99998 2.41328 4.97477 2.49153 4.92716C2.56979 4.87955 2.63346 4.81135 2.6756 4.73001C3.15285 3.7872 3.87523 2.99033 4.76685 2.42314C4.87907 2.35236 4.95857 2.2399 4.98787 2.1105C5.01718 1.9811 4.99388 1.84536 4.9231 1.73314C4.85232 1.62092 4.73986 1.54141 4.61046 1.51211C4.48106 1.48281 4.34532 1.50611 4.2331 1.57689C3.19397 2.24222 2.35021 3.17162 1.7881 4.27001C1.74862 4.34621 1.72942 4.43129 1.73235 4.51706C1.73527 4.60283 1.76022 4.6864 1.8048 4.75973C1.84938 4.83307 1.91208 4.89369 1.98687 4.93577C2.06166 4.97785 2.14603 4.99998 2.23185 5.00001ZM13.8631 11.4963C13.9517 11.6482 13.9986 11.8207 13.9992 11.9966C13.9998 12.1724 13.9541 12.3453 13.8665 12.4978C13.779 12.6503 13.6528 12.7771 13.5007 12.8652C13.3485 12.9534 13.1758 12.9999 13 13H10.45C10.3352 13.5652 10.0286 14.0733 9.5821 14.4382C9.13559 14.8032 8.57665 15.0025 7.99997 15.0025C7.42329 15.0025 6.86435 14.8032 6.41784 14.4382C5.97134 14.0733 5.66473 13.5652 5.54997 13H2.99997C2.82423 12.9997 2.65169 12.953 2.49973 12.8648C2.34776 12.7765 2.22173 12.6498 2.13435 12.4973C2.04696 12.3448 2.00129 12.172 2.00195 11.9963C2.00261 11.8205 2.04957 11.6481 2.1381 11.4963C2.70122 10.5244 2.99997 9.14251 2.99997 7.50001C2.99997 6.17393 3.52676 4.90216 4.46444 3.96448C5.40212 3.0268 6.67389 2.50001 7.99997 2.50001C9.32605 2.50001 10.5978 3.0268 11.5355 3.96448C12.4732 4.90216 13 6.17393 13 7.50001C13 9.14189 13.2987 10.5238 13.8631 11.4963ZM9.41372 13H6.58622C6.68981 13.2921 6.88135 13.545 7.13451 13.7239C7.38767 13.9027 7.69002 13.9987 7.99997 13.9987C8.30993 13.9987 8.61227 13.9027 8.86543 13.7239C9.11859 13.545 9.31013 13.2921 9.41372 13ZM13 12C12.335 10.8581 12 9.34439 12 7.50001C12 6.43915 11.5785 5.42173 10.8284 4.67159C10.0783 3.92144 9.06084 3.50001 7.99997 3.50001C6.93911 3.50001 5.92169 3.92144 5.17154 4.67159C4.4214 5.42173 3.99997 6.43915 3.99997 7.50001C3.99997 9.34501 3.66372 10.8588 2.99997 12H13Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">Smart Keyword Generator</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Automatic suggestions and the best keywords to target.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 4.5C3 4.36739 3.05268 4.24021 3.14645 4.14645C3.24022 4.05268 3.36739 4 3.5 4H4.5V3C4.5 2.86739 4.55268 2.74021 4.64645 2.64645C4.74022 2.55268 4.86739 2.5 5 2.5C5.13261 2.5 5.25979 2.55268 5.35355 2.64645C5.44732 2.74021 5.5 2.86739 5.5 3V4H6.5C6.63261 4 6.75979 4.05268 6.85355 4.14645C6.94732 4.24021 7 4.36739 7 4.5C7 4.63261 6.94732 4.75979 6.85355 4.85355C6.75979 4.94732 6.63261 5 6.5 5H5.5V6C5.5 6.13261 5.44732 6.25979 5.35355 6.35355C5.25979 6.44732 5.13261 6.5 5 6.5C4.86739 6.5 4.74022 6.44732 4.64645 6.35355C4.55268 6.25979 4.5 6.13261 4.5 6V5H3.5C3.36739 5 3.24022 4.94732 3.14645 4.85355C3.05268 4.75979 3 4.63261 3 4.5ZM11.5 12.5H11V12C11 11.8674 10.9473 11.7402 10.8536 11.6464C10.7598 11.5527 10.6326 11.5 10.5 11.5C10.3674 11.5 10.2402 11.5527 10.1464 11.6464C10.0527 11.7402 10 11.8674 10 12V12.5H9.5C9.36739 12.5 9.24022 12.5527 9.14645 12.6464C9.05268 12.7402 9 12.8674 9 13C9 13.1326 9.05268 13.2598 9.14645 13.3536C9.24022 13.4473 9.36739 13.5 9.5 13.5H10V14C10 14.1326 10.0527 14.2598 10.1464 14.3536C10.2402 14.4473 10.3674 14.5 10.5 14.5C10.6326 14.5 10.7598 14.4473 10.8536 14.3536C10.9473 14.2598 11 14.1326 11 14V13.5H11.5C11.6326 13.5 11.7598 13.4473 11.8536 13.3536C11.9473 13.2598 12 13.1326 12 13C12 12.8674 11.9473 12.7402 11.8536 12.6464C11.7598 12.5527 11.6326 12.5 11.5 12.5ZM15 9.5H14V8.5C14 8.36739 13.9473 8.24021 13.8536 8.14645C13.7598 8.05268 13.6326 8 13.5 8C13.3674 8 13.2402 8.05268 13.1464 8.14645C13.0527 8.24021 13 8.36739 13 8.5V9.5H12C11.8674 9.5 11.7402 9.55268 11.6464 9.64645C11.5527 9.74021 11.5 9.86739 11.5 10C11.5 10.1326 11.5527 10.2598 11.6464 10.3536C11.7402 10.4473 11.8674 10.5 12 10.5H13V11.5C13 11.6326 13.0527 11.7598 13.1464 11.8536C13.2402 11.9473 13.3674 12 13.5 12C13.6326 12 13.7598 11.9473 13.8536 11.8536C13.9473 11.7598 14 11.6326 14 11.5V10.5H15C15.1326 10.5 15.2598 10.4473 15.3536 10.3536C15.4473 10.2598 15.5 10.1326 15.5 10C15.5 9.86739 15.4473 9.74021 15.3536 9.64645C15.2598 9.55268 15.1326 9.5 15 9.5ZM13.7069 5.5L5 14.2069C4.81248 14.3943 4.55823 14.4995 4.29313 14.4995C4.02802 14.4995 3.77377 14.3943 3.58625 14.2069L2.2925 12.9144C2.19962 12.8215 2.12594 12.7113 2.07567 12.5899C2.0254 12.4686 1.99953 12.3385 1.99953 12.2072C1.99953 12.0758 2.0254 11.9458 2.07567 11.8245C2.12594 11.7031 2.19962 11.5929 2.2925 11.5L11 2.79312C11.0929 2.70024 11.2031 2.62656 11.3245 2.57629C11.4458 2.52602 11.5758 2.50015 11.7072 2.50015C11.8385 2.50015 11.9686 2.52602 12.0899 2.57629C12.2113 2.62656 12.3215 2.70024 12.4144 2.79312L13.7069 4.08562C13.7998 4.17849 13.8734 4.28874 13.9237 4.41008C13.974 4.53142 13.9999 4.66147 13.9999 4.79281C13.9999 4.92415 13.974 5.05421 13.9237 5.17555C13.8734 5.29689 13.7998 5.40714 13.7069 5.5ZM10.2925 7.5L9 6.20687L3 12.2069L4.2925 13.5L10.2925 7.5ZM13 4.79313L11.7069 3.5L9.70688 5.5L11 6.79313L13 4.79313Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">Automated Alerts</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Automatic notifications about your SEO health, including
+                    quick fixes.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.5 2.00004V1.50004C5.5 1.36743 5.55267 1.24026 5.64644 1.14649C5.74021 1.05272 5.86739 1.00004 6 1.00004C6.1326 1.00004 6.25978 1.05272 6.35355 1.14649C6.44732 1.24026 6.5 1.36743 6.5 1.50004V2.00004C6.5 2.13265 6.44732 2.25983 6.35355 2.35359C6.25978 2.44736 6.1326 2.50004 6 2.50004C5.86739 2.50004 5.74021 2.44736 5.64644 2.35359C5.55267 2.25983 5.5 2.13265 5.5 2.00004ZM0.999995 7.00004H1.5C1.6326 7.00004 1.75978 6.94736 1.85355 6.85359C1.94732 6.75983 2 6.63265 2 6.50004C2 6.36743 1.94732 6.24026 1.85355 6.14649C1.75978 6.05272 1.6326 6.00004 1.5 6.00004H0.999995C0.867387 6.00004 0.74021 6.05272 0.646442 6.14649C0.552674 6.24026 0.499995 6.36743 0.499995 6.50004C0.499995 6.63265 0.552674 6.75983 0.646442 6.85359C0.74021 6.94736 0.867387 7.00004 0.999995 7.00004ZM7.77625 2.94754C7.835 2.97697 7.89899 2.99452 7.96453 2.9992C8.03008 3.00388 8.09591 2.99559 8.15825 2.97481C8.2206 2.95403 8.27823 2.92117 8.32786 2.87809C8.37749 2.83502 8.41814 2.78259 8.4475 2.72379L8.9475 1.72379C9.00684 1.60519 9.01663 1.46787 8.97473 1.34205C8.93283 1.21622 8.84266 1.1122 8.72406 1.05285C8.60546 0.993511 8.46814 0.983714 8.34231 1.02562C8.21649 1.06752 8.11246 1.15769 8.05312 1.27629L7.55312 2.27629C7.52367 2.33501 7.50608 2.39896 7.50136 2.46448C7.49664 2.53 7.50487 2.59581 7.52559 2.65815C7.54631 2.72049 7.57911 2.77813 7.62212 2.82779C7.66513 2.87744 7.7175 2.91814 7.77625 2.94754ZM1.77625 8.05317L0.776245 8.55317C0.657644 8.61251 0.567474 8.71653 0.525571 8.84236C0.483668 8.96818 0.493466 9.1055 0.552808 9.2241C0.61215 9.34271 0.716176 9.43288 0.842001 9.47478C0.967826 9.51668 1.10514 9.50688 1.22375 9.44754L2.22375 8.94754C2.28247 8.91816 2.33483 8.87749 2.37784 8.82788C2.42086 8.77826 2.45367 8.72065 2.47442 8.65835C2.49517 8.59605 2.50344 8.53027 2.49877 8.46477C2.49409 8.39927 2.47657 8.33533 2.44718 8.2766C2.4178 8.21788 2.37714 8.16551 2.32752 8.1225C2.2779 8.07949 2.22029 8.04668 2.15799 8.02593C2.09569 8.00518 2.02991 7.99691 1.96441 8.00158C1.89891 8.00625 1.83497 8.02378 1.77625 8.05317ZM13.7069 12C13.7998 12.0929 13.8734 12.2032 13.9237 12.3245C13.974 12.4458 13.9998 12.5759 13.9998 12.7072C13.9998 12.8386 13.974 12.9686 13.9237 13.09C13.8734 13.2113 13.7998 13.3216 13.7069 13.4144L12.9144 14.2069C12.8215 14.2998 12.7113 14.3735 12.5899 14.4237C12.4686 14.474 12.3385 14.4999 12.2072 14.4999C12.0758 14.4999 11.9458 14.474 11.8244 14.4237C11.7031 14.3735 11.5929 14.2998 11.5 14.2069L8.29375 11L7.1875 13.8807C7.1875 13.8869 7.1825 13.8938 7.17937 13.9007C7.10285 14.0791 6.97553 14.231 6.81328 14.3376C6.65102 14.4442 6.461 14.5007 6.26687 14.5H6.2175C6.01504 14.4915 5.8201 14.4209 5.65902 14.298C5.49795 14.175 5.37852 14.0056 5.31687 13.8125L2.05 3.80754C1.99391 3.63256 1.98713 3.44552 2.03038 3.26694C2.07363 3.08836 2.16524 2.92514 2.29517 2.79522C2.4251 2.66529 2.58831 2.57367 2.76689 2.53042C2.94547 2.48717 3.13252 2.49396 3.3075 2.55004L13.3125 5.81692C13.5037 5.88088 13.6711 6.00116 13.7928 6.16196C13.9144 6.32277 13.9846 6.51659 13.9941 6.718C14.0037 6.91941 13.9521 7.11899 13.8462 7.29056C13.7403 7.46213 13.5849 7.59768 13.4006 7.67942L13.3806 7.68754L10.5 8.79317L13.7069 12ZM13 12.7069L9.79312 9.50004C9.67769 9.38482 9.59219 9.24312 9.54408 9.08729C9.49597 8.93146 9.4867 8.76622 9.51708 8.60599C9.54746 8.44575 9.61658 8.29538 9.7184 8.16797C9.82022 8.04057 9.95165 7.94001 10.1012 7.87504L10.1212 7.86629L12.9931 6.76379L3 3.50004L6.2625 13.4913L7.36562 10.6163C7.36562 10.6094 7.37062 10.6025 7.37375 10.5957C7.43873 10.4462 7.53927 10.3149 7.66661 10.2131C7.79395 10.1114 7.94423 10.0423 8.10437 10.0119C8.16622 10.0005 8.22897 9.99459 8.29187 9.99442C8.55682 9.99471 8.81083 10.1001 8.99812 10.2875L12.2069 13.5L13 12.7069Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">One-click optimization</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Perform complex SEO audits and optimizations with a single
+                    click.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c1z0l37u c1ml0hr7 cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk cr1aip5 c18knjwi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    <div
+                      class="w-html-embed csru8nn ch2prsz cg4iiql c1qyy4dh ct02u4h"
+                    >
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.3538 4.64625L10.8538 2.14625C10.8073 2.09983 10.7521 2.06303 10.6914 2.03793C10.6307 2.01284 10.5657 1.99995 10.5 2H5.5C5.23478 2 4.98043 2.10536 4.79289 2.29289C4.60536 2.48043 4.5 2.73478 4.5 3V4H3.5C3.23478 4 2.98043 4.10536 2.79289 4.29289C2.60536 4.48043 2.5 4.73478 2.5 5V14C2.5 14.2652 2.60536 14.5196 2.79289 14.7071C2.98043 14.8946 3.23478 15 3.5 15H10.5C10.7652 15 11.0196 14.8946 11.2071 14.7071C11.3946 14.5196 11.5 14.2652 11.5 14V13H12.5C12.7652 13 13.0196 12.8946 13.2071 12.7071C13.3946 12.5196 13.5 12.2652 13.5 12V5C13.5001 4.93432 13.4872 4.86927 13.4621 4.80858C13.437 4.74788 13.4002 4.69272 13.3538 4.64625ZM10.5 14H3.5V5H8.29313L10.5 7.20687V12.49C10.5 12.4937 10.5 12.4969 10.5 12.5C10.5 12.5031 10.5 12.5063 10.5 12.51V14ZM12.5 12H11.5V7C11.5001 6.93432 11.4872 6.86927 11.4621 6.80858C11.437 6.74788 11.4002 6.69272 11.3538 6.64625L8.85375 4.14625C8.80728 4.09983 8.75212 4.06303 8.69143 4.03793C8.63073 4.01284 8.56568 3.99995 8.5 4H5.5V3H10.2931L12.5 5.20688V12ZM9 10C9 10.1326 8.94732 10.2598 8.85355 10.3536C8.75979 10.4473 8.63261 10.5 8.5 10.5H5.5C5.36739 10.5 5.24021 10.4473 5.14645 10.3536C5.05268 10.2598 5 10.1326 5 10C5 9.86739 5.05268 9.74021 5.14645 9.64645C5.24021 9.55268 5.36739 9.5 5.5 9.5H8.5C8.63261 9.5 8.75979 9.55268 8.85355 9.64645C8.94732 9.74021 9 9.86739 9 10ZM9 12C9 12.1326 8.94732 12.2598 8.85355 12.3536C8.75979 12.4473 8.63261 12.5 8.5 12.5H5.5C5.36739 12.5 5.24021 12.4473 5.14645 12.3536C5.05268 12.2598 5 12.1326 5 12C5 11.8674 5.05268 11.7402 5.14645 11.6464C5.24021 11.5527 5.36739 11.5 5.5 11.5H8.5C8.63261 11.5 8.75979 11.5527 8.85355 11.6464C8.94732 11.7402 9 11.8674 9 12Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="w-text">Competitor Reports</span>
+                  </h3>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <p class="w-paragraph">
+                    Provides insights into competitors’ keyword strategies and
+                    ranking.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-box cna0hdz c1mzb2kd cktaign cowwg1a c1noghwu c1i7z02k c5hqtns c4a9xim c15xw1g2"
+        >
+          <div
+            class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1s46o9r cdczzub c1fd0kk1 c11gzs80 cmoe9jo c1obig1w"
+          >
+            <div
+              class="w-box cry9bxc c1lfjoq7 ct8c5y2 c10zkoym c1qyy4dh c1wt8a7g"
+            >
+              <h2
+                class="w-heading c1dxq9cf cy1haag c32myit cwrra4i c12y6bqh c1mpwk4w c74kosi c1qom380 c1357293 c9jnjeu c1dhz37v"
+              >
+                Our Clients
+              </h2>
+              <p
+                class="w-paragraph c16xpvrq c1qom380 c62q3t9 c1357293 c9jnjeu czt9u4x"
+              >
+                Hear firsthand how our solutions have boosted online success for
+                users like you.
+              </p>
+            </div>
+            <div
+              class="w-box copqmak c10zkoym ct8c5y2 cevxs5e co2qwzx c1vrexag c9scc c9grybw crv1a4t cbrrmm8 cuo9dm5 c5egcmi c3hctjf cxz9xjl cx6c9kw c174sw29 c1dz3al c1cl2zap c8qdjaz c1uc2zh c1l8rbde cq8dnu3 c17jj8qr cth1c7d"
+            >
+              <div class="w-box">
+                <img
+                  alt="Talia Taylor"
+                  width="634"
+                  height="580"
+                  src="/assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png"
+                  class="w-image cwvpjlf cf4s3xc"
+                  sizes="100vw"
+                  srcset="
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png   16w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png   32w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png   48w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png   64w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png   96w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png  128w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png  256w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png  384w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png  640w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png  750w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png  828w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png 1080w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png 1200w,
+                    /assets/Property_1_Mobile_G2IuZr4NZT5jICdghKCUw.png 1920w
+                  "
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c62q3t9 c1z0l37u c1ml0hr7 c16xs6ny ct02u4h cqtg27u c1rstvfo c1bulmrh c12f3mdq"
+              >
+                <p
+                  class="w-paragraph cpo5yh5 cnrz8fp c6oj68y c23h93x c1dhz37v cqe39x4"
+                >
+                  ”This product has completely transformed how I manage my
+                  projects and deadlines”
+                </p>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 ctm7uqk cdqkcyf c16xs6ny ct02u4h c1rstvfo c1bulmrh"
+                >
+                  <div class="w-text cnrz8fp">Talia Taylor</div>
+                  <div class="w-text">Digital Marketing Director @ Quantum</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-box cna0hdz c1mzb2kd c17vqhen cnu4kgu crv1a4t cbrrmm8 cuo9dm5 c5egcmi c17mmneu"
+        >
+          <div
+            class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1s46o9r cdczzub c1fd0kk1 c11gzs80"
+          >
+            <div
+              class="w-box cry9bxc c1lfjoq7 ct8c5y2 c10zkoym c1qyy4dh c1wt8a7g"
+            >
+              <h2
+                class="w-heading c1dxq9cf cy1haag c32myit cwrra4i c12y6bqh c1mpwk4w c74kosi c1qom380 c1357293 c9jnjeu c1dhz37v"
+              >
+                Pricing
+              </h2>
+              <p
+                class="w-paragraph c16xpvrq c1qom380 c62q3t9 c1357293 c9jnjeu czt9u4x"
+              >
+                Choose the right plan to meet your SEO needs and start
+                optimizing today.
+              </p>
+            </div>
+            <div
+              class="w-box copqmak c10zkoym ct8c5y2 cejtdrx co2qwzx c1vrexag cx6c9kw c174sw29"
+            >
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c16r2hhi c1ozwq0i cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk ce02iuh c15hexcm"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cuoke4w c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    Pricing
+                  </h3>
+                  <p class="w-paragraph">$29/mo</p>
+                </div>
+                <hr class="w-separator c57dhyt czr2pxy c32myit cwrra4i" />
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <ul
+                    class="w-list c1cn3fw9 cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c34dwh1 c1y6imu0 c32myit"
+                  >
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Keyword optimization
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Automated meta tags
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      SEO monitoring
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Monthly reports
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g c1lyhjp7"
+                >
+                  <a
+                    class="w-link c1mtjugd c13b531o c1my01bv c14z1eqr c1ktl1y1 cr8yqfm c1ufwdzl c5blvcv cml0h3f c135vpv5 csru8nn c1qyy4dh ct02u4h c1md20bl c1e892th c1qom380 c1gkfupp cbm6zv4 c1b1wvmf c1mcu1jn c1d7r856 cd3iwfe c1yhcvvf cwc6hbl c11r52nx czr2pxy ckz5c6u cl60rel c1ib9cr2 c1vlwcj"
+                    href="#"
+                    >Join Waitlist</a
+                  >
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1t3frhm c16r2hhi c1ozwq0i cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk c1yis186 cn1jd01 c12hsjsj c1ru090q c1syziaj c119suh8 cx97dnn ce02iuh c15hexcm cyhujw8 c1l2ougi"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cuoke4w c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    Pro
+                  </h3>
+                  <p class="w-paragraph">$79/mo</p>
+                </div>
+                <hr class="w-separator c57dhyt czr2pxy c32myit cwrra4i" />
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <ul
+                    class="w-list c1cn3fw9 cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c34dwh1 c1y6imu0 c32myit"
+                  >
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Keyword optimization
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Automated meta tags
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      SEO monitoring
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Monthly reports
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Content suggestions
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Link optimization
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g c1lyhjp7"
+                >
+                  <a
+                    class="w-link cnrz8fp c13b531o c1my01bv c14z1eqr c1ktl1y1 cr8yqfm c1ufwdzl c5blvcv cml0h3f c135vpv5 csru8nn c1qyy4dh ct02u4h c1md20bl c1e892th c1qom380 c10ldywu cbm6zv4 c1b1wvmf c1mcu1jn c1d7r856 cd3iwfe c1yhcvvf cwc6hbl c11r52nx czr2pxy cheslu6 cl60rel c1ib9cr2 cr2cdex"
+                    href="#"
+                    >Join Waitlist</a
+                  >
+                </div>
+              </div>
+              <div
+                class="w-box cry9bxc c1lfjoq7 c1wt8a7g c16r2hhi c1ozwq0i cv2gy63 cxn73lu c5dy17i c1hsfuam c1e7helk ce02iuh c15hexcm"
+              >
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1md20bl c1e892th"
+                >
+                  <h3
+                    class="w-heading cuoke4w c11dowh9 c32myit cwrra4i c12y6bqh"
+                  >
+                    Business
+                  </h3>
+                  <p class="w-paragraph">$149/mo</p>
+                </div>
+                <hr class="w-separator c57dhyt czr2pxy c32myit cwrra4i" />
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c16xs6ny c1wt8a7g c1z0l37u c1ml0hr7"
+                >
+                  <ul
+                    class="w-list c1cn3fw9 cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c34dwh1 c1y6imu0 c32myit"
+                  >
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Keyword optimization
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Automated meta tags
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      SEO monitoring
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Monthly reports
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Content suggestions
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Link optimization
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      Multi-user access
+                    </li>
+                    <li
+                      class="w-list-item cnrz8fp c1622pe5 c7uk64 cwlpv0j crv1a4t cbrrmm8 cuo9dm5 c5egcmi c1vax25q"
+                    >
+                      API integration
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="w-box cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 c16xs6ny c1wt8a7g c1lyhjp7"
+                >
+                  <a
+                    class="w-link c1mtjugd c13b531o c1my01bv c14z1eqr c1ktl1y1 cr8yqfm c1ufwdzl c5blvcv cml0h3f c135vpv5 csru8nn c1qyy4dh ct02u4h c1md20bl c1e892th c1qom380 c1gkfupp cbm6zv4 c1b1wvmf c1mcu1jn c1d7r856 cd3iwfe c1yhcvvf cwc6hbl c11r52nx czr2pxy ckz5c6u cl60rel c1ib9cr2 c1vlwcj"
+                    href="#"
+                    >Join Waitlist</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1s46o9r cdczzub c1fd0kk1 c11gzs80 cc6wxoz cowwg1a ctgnupg c1i7z02k c5hqtns c4a9xim cqfle91"
+        >
+          <div
+            class="w-box cna0hdz c1mzb2kd c1qyy4dh c1wt8a7g cry9bxc c1lfjoq7 c1z0l37u c1ml0hr7 cdiyoxz c9grybw c1yb3n9o cbrrmm8 cuo9dm5 c5egcmi c17mmneu c1dz3al c1cl2zap c8qdjaz c1uc2zh c1l8rbde cq8dnu3 cth1c7d"
+          >
+            <div
+              class="w-box cry9bxc c1lfjoq7 ct8c5y2 c10zkoym c1qyy4dh c1wt8a7g"
+            >
+              <h2
+                class="w-heading c1dxq9cf cy1haag c32myit cwrra4i c12y6bqh c1mpwk4w c74kosi c1qom380 c1357293 c9jnjeu c1dhz37v"
+              >
+                AI-Driven SEO For Everyone.
+              </h2>
+            </div>
+            <div class="w-box cavd3zn c16euuik c1e2b3ev czsotsp cw7dtlx">
+              <input
+                id="input-email"
+                required=""
+                placeholder="Your email"
+                class="w-text-input c1a8d7ts c1b2tb9q cuan1vj c1xm4ef6 ccfzz03 cub2gss cgcvr98 c1xjllne c1e7helk cg5i74l c1e3v5m0 cl60rel c2zsigv c1rqinhn c10oncvz"
+                type="email"
+                name="input-email"
+              /><button
+                type="submit"
+                class="w-button c1plv2ab c13b531o c1my01bv c14z1eqr c1ktl1y1 cr8yqfm c1ufwdzl c5blvcv cml0h3f c135vpv5 csru8nn c1qyy4dh ct02u4h c1md20bl c1e892th c1qom380 cn2jcgb cdcs8wy c1m1praz c1mcu1jn c1d7r856 cd3iwfe c1yhcvvf cwc6hbl c11r52nx cblpe2z cdwd3jx c1gmh7up cuf9c1i cimc1rz cheslu6 cl60rel c1ib9cr2 c82bfcw c1ukphsi c173sbc c1k8qtmf"
+              >
+                Join Waitlist
+              </button>
+            </div>
+            <p class="w-paragraph cgbme5g c1qom380">
+              No credit card required · 7-days free trial
+            </p>
+          </div>
+        </section>
+      </main>
+      <div style="display: contents">
+        <div style="display: contents">
+          <footer class="w-box cna0hdz c1mzb2kd">
+            <div
+              class="w-box c1357293 c9jnjeu czr2pxy c155uc7w cry9bxc c1lfjoq7 c1778y6x c1wt8a7g c1s46o9r cdczzub c1fd0kk1 c11gzs80"
+            >
+              <div class="w-box cry9bxc c18v2pa2 c174sw29 cmaksb1 c1i9o1yp">
+                <a
+                  href="/"
+                  class="w-link c1pu3n16 cld4m44 c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p c1x4yn0w cl60rel c1ib9cr2 c1d7u282"
+                  ><img
+                    alt="Logo"
+                    width="153"
+                    height="152"
+                    src="/assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png"
+                    class="w-image c18apts0"
+                    sizes="100vw"
+                    srcset="
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  16w,
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  32w,
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  48w,
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  64w,
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png  96w,
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 128w,
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 256w,
+                      /assets/Logo_(1)_4DOjcRBy3o604SWE02Vw5.png 384w
+                    "
+                    decoding="async"
+                    loading="lazy"
+                /></a>
+                <div class="w-box cry9bxc c1lxiyww c1s46o9r cdczzub c1jjfh4b">
+                  <nav
+                    aria-labelledby="menu1Title"
+                    class="w-box cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                  >
+                    <h2
+                      id="menu1Title"
+                      class="w-heading c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                    >
+                      Product
+                    </h2>
+                    <ul
+                      class="w-list c34dwh1 c1y6imu0 c1cn3fw9 cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                    >
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Features</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Integration</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Updates</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >FAQ</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Pricing</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav
+                    aria-labelledby="menu2Title"
+                    class="w-box cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                  >
+                    <h2
+                      id="menu2Title"
+                      class="w-heading c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                    >
+                      Company
+                    </h2>
+                    <ul
+                      class="w-list c34dwh1 c1y6imu0 c1cn3fw9 cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                    >
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >About</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Blog</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Careers</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Manifesto</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Press</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Contract</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav
+                    aria-labelledby="menu3Title"
+                    class="w-box cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                  >
+                    <h2
+                      id="menu3Title"
+                      class="w-heading c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                    >
+                      Resources
+                    </h2>
+                    <ul
+                      class="w-list c34dwh1 c1y6imu0 c1cn3fw9 cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                    >
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Examples</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Community</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Guides</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Docs</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Press</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav
+                    aria-labelledby="menu4Title"
+                    class="w-box cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                  >
+                    <h2
+                      id="menu4Title"
+                      class="w-heading c160atll c11dowh9 c32myit cwrra4i c12y6bqh"
+                    >
+                      Legal
+                    </h2>
+                    <ul
+                      class="w-list c34dwh1 c1y6imu0 c1cn3fw9 cry9bxc c1z0l37u c1ml0hr7 c1lfjoq7"
+                    >
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Privacy</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Terms</a
+                        >
+                      </li>
+                      <li class="w-list-item">
+                        <a
+                          href="/"
+                          class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                          >Security</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="w-box cry9bxc ct02u4h c1lfjoq7 c16xs6ny">
+                <div class="w-box cry9bxc c1qyy4dh ct02u4h c1z0l37u c1ml0hr7">
+                  <a
+                    aria-label="X"
+                    class="w-link c1pu3n16 cld4m44 c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p cl60rel c1ib9cr2 c1d7u282"
+                    href="#"
+                    ><div class="w-html-embed">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.4">
+                          <path
+                            d="M20.1562 20.6109C20.0917 20.7286 19.9967 20.8267 19.8813 20.8951C19.7659 20.9636 19.6342 20.9998 19.5 21H15C14.8738 21 14.7496 20.9681 14.639 20.9073C14.5284 20.8465 14.4349 20.7587 14.3672 20.6522L10.5712 14.6869L5.055 20.7544C4.92053 20.8988 4.73454 20.9845 4.53735 20.9927C4.34017 21.0009 4.14769 20.9311 4.00163 20.7984C3.85558 20.6657 3.76773 20.4807 3.75713 20.2836C3.74653 20.0866 3.81403 19.8933 3.945 19.7456L9.73594 13.3706L3.86719 4.15313C3.79491 4.03973 3.75444 3.90898 3.75004 3.77458C3.74563 3.64018 3.77744 3.50707 3.84213 3.38918C3.90683 3.27129 4.00203 3.17296 4.11777 3.10449C4.23351 3.03603 4.36552 2.99993 4.5 3H9C9.12622 3.00004 9.2504 3.03194 9.36102 3.09274C9.47164 3.15353 9.56512 3.24127 9.63281 3.34781L13.4287 9.31312L18.945 3.24562C19.0795 3.10117 19.2655 3.01555 19.4626 3.00731C19.6598 2.99907 19.8523 3.06888 19.9984 3.20161C20.1444 3.33435 20.2323 3.51929 20.2429 3.71636C20.2535 3.91343 20.186 4.10674 20.055 4.25438L14.2641 10.6247L20.1328 19.8478C20.2047 19.9613 20.2448 20.0919 20.2489 20.2262C20.253 20.3604 20.221 20.4933 20.1562 20.6109Z"
+                            fill="white"
+                          ></path>
+                        </g>
+                      </svg></div></a
+                  ><a
+                    aria-label="Instagram"
+                    class="w-link c1pu3n16 cld4m44 c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p cl60rel c1ib9cr2 c1d7u282"
+                    href="#"
+                    ><div class="w-html-embed">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.4">
+                          <path
+                            d="M16.5 2.25H7.5C6.10807 2.25149 4.77358 2.80509 3.78933 3.78933C2.80509 4.77358 2.25149 6.10807 2.25 7.5V16.5C2.25149 17.8919 2.80509 19.2264 3.78933 20.2107C4.77358 21.1949 6.10807 21.7485 7.5 21.75H16.5C17.8919 21.7485 19.2264 21.1949 20.2107 20.2107C21.1949 19.2264 21.7485 17.8919 21.75 16.5V7.5C21.7485 6.10807 21.1949 4.77358 20.2107 3.78933C19.2264 2.80509 17.8919 2.25149 16.5 2.25ZM12 16.5C11.11 16.5 10.24 16.2361 9.49993 15.7416C8.75991 15.2471 8.18314 14.5443 7.84254 13.7221C7.50195 12.8998 7.41283 11.995 7.58647 11.1221C7.7601 10.2492 8.18868 9.44736 8.81802 8.81802C9.44736 8.18868 10.2492 7.7601 11.1221 7.58647C11.995 7.41283 12.8998 7.50195 13.7221 7.84254C14.5443 8.18314 15.2471 8.75991 15.7416 9.49993C16.2361 10.24 16.5 11.11 16.5 12C16.4988 13.1931 16.0243 14.337 15.1806 15.1806C14.337 16.0243 13.1931 16.4988 12 16.5ZM17.625 7.5C17.4025 7.5 17.185 7.43402 17 7.3104C16.815 7.18679 16.6708 7.01109 16.5856 6.80552C16.5005 6.59995 16.4782 6.37375 16.5216 6.15552C16.565 5.93729 16.6722 5.73684 16.8295 5.5795C16.9868 5.42217 17.1873 5.31502 17.4055 5.27162C17.6238 5.22821 17.85 5.25049 18.0555 5.33564C18.2611 5.42078 18.4368 5.56498 18.5604 5.74998C18.684 5.93499 18.75 6.1525 18.75 6.375C18.75 6.67337 18.6315 6.95952 18.4205 7.1705C18.2095 7.38147 17.9234 7.5 17.625 7.5ZM15 12C15 12.5933 14.8241 13.1734 14.4944 13.6667C14.1648 14.1601 13.6962 14.5446 13.1481 14.7716C12.5999 14.9987 11.9967 15.0581 11.4147 14.9424C10.8328 14.8266 10.2982 14.5409 9.87868 14.1213C9.45912 13.7018 9.1734 13.1672 9.05764 12.5853C8.94189 12.0033 9.0013 11.4001 9.22836 10.8519C9.45542 10.3038 9.83994 9.83524 10.3333 9.50559C10.8266 9.17595 11.4067 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z"
+                            fill="white"
+                          ></path>
+                        </g>
+                      </svg></div></a
+                  ><a
+                    aria-label="YouTube"
+                    class="w-link c1pu3n16 cld4m44 c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p cl60rel c1ib9cr2 c1d7u282"
+                    href="#"
+                    ><div class="w-html-embed">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.4">
+                          <path
+                            d="M21.9684 6.5175C21.8801 6.17189 21.7109 5.85224 21.4747 5.58491C21.2385 5.31758 20.9421 5.11024 20.61 4.98C17.3962 3.73875 12.2812 3.75 12 3.75C11.7188 3.75 6.60375 3.73875 3.39 4.98C3.0579 5.11024 2.76153 5.31758 2.52534 5.58491C2.28915 5.85224 2.1199 6.17189 2.03156 6.5175C1.78875 7.45313 1.5 9.16313 1.5 12C1.5 14.8369 1.78875 16.5469 2.03156 17.4825C2.11977 17.8283 2.28895 18.1481 2.52515 18.4156C2.76136 18.6831 3.0578 18.8906 3.39 19.0209C6.46875 20.2088 11.2875 20.25 11.9381 20.25H12.0619C12.7125 20.25 17.5341 20.2088 20.61 19.0209C20.9422 18.8906 21.2386 18.6831 21.4748 18.4156C21.711 18.1481 21.8802 17.8283 21.9684 17.4825C22.2113 16.545 22.5 14.8369 22.5 12C22.5 9.16313 22.2113 7.45313 21.9684 6.5175ZM15.0553 12.6113L11.3053 15.2363C11.1931 15.3148 11.0616 15.3612 10.9249 15.3703C10.7883 15.3794 10.6517 15.351 10.5301 15.288C10.4085 15.225 10.3064 15.1299 10.235 15.013C10.1636 14.8962 10.1256 14.762 10.125 14.625V9.375C10.125 9.2378 10.1627 9.10324 10.2339 8.98597C10.3051 8.86869 10.4071 8.77319 10.5289 8.70987C10.6506 8.64655 10.7873 8.61783 10.9242 8.62683C11.0611 8.63584 11.1929 8.68222 11.3053 8.76094L15.0553 11.3859C15.154 11.4551 15.2345 11.547 15.2901 11.6539C15.3457 11.7608 15.3747 11.8795 15.3747 12C15.3747 12.1205 15.3457 12.2392 15.2901 12.3461C15.2345 12.453 15.154 12.5449 15.0553 12.6141V12.6113Z"
+                            fill="white"
+                          ></path>
+                        </g>
+                      </svg></div
+                  ></a>
+                </div>
+                <div
+                  class="w-box cry9bxc c1qyy4dh c1wt8a7g c1md20bl c1e892th c1y4fwd4"
+                >
+                  <div class="w-text">© 2024 Your Company, Inc.</div>
+                  <a
+                    href="/credits"
+                    class="w-link catu86a csru8nn c1e9wxra c1c9nyn co9inq6 c18nx7en c13zjl4p ch11gwv c1md20bl c1e892th c1qyy4dh ct02u4h c1e7helk c1l0vha7 csyy8v5 c1bc2i7x c17r8x7j c13b531o c1my01bv c135vpv5 c1y6imu0 c3qzgd0 cl60rel c1ib9cr2 c1ukphsi c12mjb61"
+                    >Credits</a
+                  >
+                </div>
+              </div>
+            </div>
+          </footer>
+          <a
+            href="https://webstudio.is/"
+            target="_blank"
+            rel="nofollow"
+            class="w-link cx7e777 cn12ej2 c1ngdwug c10yh23j c7f1npl c1sjzfnm c1trj0l7 cjqo3r0 cbuoy5w c393lej csxsvt6 c1oj4qw c183qt6d c1twgu0n c5r7m82 c1fhiulb cifio c1u7hg1c c1qqyhy5 c1mb8swa c1awhn4n c1qyy4dh ct02u4h csru8nn c135vpv5 c119suh8 cujxabw c17xbrdu c1lvufj2 c1oohece co9inq6 c18nx7en c13zjl4p ch9sscy c272dxa"
             ><img
-              alt="image"
-              src="public/notes-1-1400w.png"
-              class="home-image12 image-notes" /></div
-          ><div class="home-second"
-            ><div data-aos="fade-up-left" class="home-content11"
-              ><h2 class="home-header12"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2
-              ><button class="button button-style-2 home-register4"
-                ><span>Register now</span
-                ><svg viewBox="0 0 1024 1024" class="home-icon22">
-                  <path
-                    d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-                  ></path></svg></button></div
-            ><img
-              alt="image"
-              src="public/notes-2-1400w.png"
-              class="image-notes" /></div></section
-        ><section class="home-quote10"
-          ><div class="home-content12"
-            ><h2 class="home-quoted"
-              >“I love lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliquaation ullamco 100%.”</h2
-            ><div class="home-author10"
-              ><img
-                alt="image"
-                src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                class="home-icon24"
-              /><div class="home-details10"
-                ><span class="home-name10">Andy Smith</span
-                ><span class="home-from">(Founder OnConf)</span></div
-              ></div
-            ></div
-          ><img
-            alt="image"
-            src="public/quote-background.svg"
-            class="home-background3" /><img
-            alt="image"
-            src="public/quote-background.svg"
-            class="home-background4" /></section
-        ><section class="home-speakers"
-          ><div class="home-header13"
-            ><section-numeral-wrapper class="section-numeral-wrapper"
-              ><!--SectionNumeral component--><div
-                class="section-numeral-section-numeral"
-                ><div class="section-numeral-divide"></div
-                ><p class="section-numeral-text"><span>01</span></p></div
-              ></section-numeral-wrapper
-            ><div data-aos="fade-right" class="home-heading1"
-              ><h2 class="home-title10">Speakers</h2
-              ><p class="home-caption12"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.</p
-              ></div
-            ></div
-          ><div class="home-list2"
-            ><div class="home-row10"
-              ><div class="speaker"
-                ><speaker-wrapper
-                  class="speaker-wrapper"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker speakerroot-class-name"
-                    ><img
-                      alt="image"
-                      src="public/speakers-1-1500w.png"
-                      class="speaker-image"
-                    /><div class="speaker-deails"
-                      ><h3 class="speaker-name"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position"
-                        ><div class="speaker-point"></div
-                        ><span class="speaker-caption"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper
-                ><speaker-wrapper-nsah
-                  class="speaker-wrapper-nsah"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker1 speakerroot-class-name3"
-                    ><img
-                      alt="image"
-                      src="public/speakers-2-1500w.png"
-                      class="speaker-image1"
-                    /><div class="speaker-deails1"
-                      ><h3 class="speaker-name1"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position1"
-                        ><div class="speaker-point1"></div
-                        ><span class="speaker-caption1"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-nsah
-                ></div
-              ><div class="home-row12 speaker"
-                ><speaker-wrapper-mep4
-                  class="speaker-wrapper-mep4"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker2 speakerroot-class-name2"
-                    ><img
-                      alt="image"
-                      src="public/speakers-3-1500w.png"
-                      class="speaker-image2"
-                    /><div class="speaker-deails2"
-                      ><h3 class="speaker-name2"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position2"
-                        ><div class="speaker-point2"></div
-                        ><span class="speaker-caption2"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-mep4
-                ><speaker-wrapper-t2n8
-                  class="speaker-wrapper-t2n8"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker3 speakerroot-class-name1"
-                    ><img
-                      alt="image"
-                      src="public/speakers-4-1500w.png"
-                      class="speaker-image3"
-                    /><div class="speaker-deails3"
-                      ><h3 class="speaker-name3"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position3"
-                        ><div class="speaker-point3"></div
-                        ><span class="speaker-caption3"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-t2n8
-                ></div
-              ></div
-            ><div class="home-row13"
-              ><div class="home-row14 speaker"
-                ><speaker-wrapper-6rm1
-                  class="speaker-wrapper-6rm1"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker4 speakerroot-class-name13"
-                    ><img
-                      alt="image"
-                      src="public/speakers-4-1500w.png"
-                      class="speaker-image4"
-                    /><div class="speaker-deails4"
-                      ><h3 class="speaker-name4"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position4"
-                        ><div class="speaker-point4"></div
-                        ><span class="speaker-caption4"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-6rm1
-                ><speaker-wrapper-e5i9
-                  class="speaker-wrapper-e5i9"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker5 speakerroot-class-name12"
-                    ><img
-                      alt="image"
-                      src="public/speakers-3-1500w.png"
-                      class="speaker-image5"
-                    /><div class="speaker-deails5"
-                      ><h3 class="speaker-name5"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position5"
-                        ><div class="speaker-point5"></div
-                        ><span class="speaker-caption5"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-e5i9
-                ></div
-              ><div class="home-row15 speaker"
-                ><speaker-wrapper-q06w
-                  class="speaker-wrapper-q06w"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker6 speakerroot-class-name10"
-                    ><img
-                      alt="image"
-                      src="public/speakers-1-1500w.png"
-                      class="speaker-image6"
-                    /><div class="speaker-deails6"
-                      ><h3 class="speaker-name6"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position6"
-                        ><div class="speaker-point6"></div
-                        ><span class="speaker-caption6"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-q06w
-                ><speaker-wrapper-a487
-                  class="speaker-wrapper-a487"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker7 speakerroot-class-name11"
-                    ><img
-                      alt="image"
-                      src="public/speakers-2-1500w.png"
-                      class="speaker-image7"
-                    /><div class="speaker-deails7"
-                      ><h3 class="speaker-name7"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position7"
-                        ><div class="speaker-point7"></div
-                        ><span class="speaker-caption7"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-a487
-                ></div
-              ></div
-            ><div class="home-row16"
-              ><div class="home-row17 speaker"
-                ><speaker-wrapper-3rl6
-                  class="speaker-wrapper-3rl6"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker8 speakerroot-class-name15"
-                    ><img
-                      alt="image"
-                      src="public/speakers-2-1500w.png"
-                      class="speaker-image8"
-                    /><div class="speaker-deails8"
-                      ><h3 class="speaker-name8"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position8"
-                        ><div class="speaker-point8"></div
-                        ><span class="speaker-caption8"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-3rl6
-                ><speaker-wrapper-svxv
-                  class="speaker-wrapper-svxv"
-                  rootclassname="speakerundefined"
-                  ><!--Speaker component--><div
-                    class="speaker-speaker9 speakerroot-class-name14"
-                    ><img
-                      alt="image"
-                      src="public/speakers-1-1500w.png"
-                      class="speaker-image9"
-                    /><div class="speaker-deails9"
-                      ><h3 class="speaker-name9"
-                        ><span>Samantha Johnson</span></h3
-                      ><div class="speaker-position9"
-                        ><div class="speaker-point9"></div
-                        ><span class="speaker-caption9"
-                          ><span>CEO, Opary</span></span
-                        ></div
-                      ></div
-                    ></div
-                  ></speaker-wrapper-svxv
-                ></div
-              ><div class="home-row18 speaker"></div></div></div></section
-        ><section class="home-watch"
-          ><div class="home-content13"
-            ><h2 class="home-header14"
-              >Watch our Watch our OnConf 2022 trailer</h2
-            ><div class="home-video1"
-              ><video
-                src=""
-                poster="public/quotes-1-1400w.png"
-                class="home-video2"
-              ></video
-              ><img
-                alt="image"
-                src="public/play.svg"
-                class="home-image14" /></div
-            ><button class="button home-register5"
-              ><span>Register now</span
-              ><svg viewBox="0 0 1024 1024" class="home-icon25">
-                <path
-                  d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-                ></path></svg></button></div
-          ><img
-            alt="image"
-            src="public/trailer-background.svg"
-            class="home-image15" /></section
-        ><section class="home-schedule"
-          ><div class="home-content14"
-            ><div class="home-header15"
-              ><div class="home-section-numeral1"
-                ><div class="home-divide1"></div
-                ><p class="home-text24">02</p></div
-              ><div data-aos="fade-right" class="home-heading2"
-                ><h2 class="home-title11">Schedule</h2
-                ><p class="home-caption13"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.</p
-                ></div
-              ></div
-            ><div class="home-main10"
-              ><div class="home-tab-selector"
-                ><div
-                  data-role="schedule-select"
-                  class="tab-active tab home-tab1"
-                  ><span class="home-text25">Friday, Nov 04</span></div
-                ><div data-role="schedule-select" class="tab home-tab2"
-                  ><span class="home-text26">Saturday, Nov 05</span></div
-                ><div data-role="schedule-select" class="tab home-tab3"
-                  ><span class="home-text27">Sunday, Nov 06</span></div
-                ></div
-              ><div class="home-lists"
-                ><section data-role="schedule-content" class="home-list3"
-                  ><div class="home-element10"
-                    ><div class="home-main11"
-                      ><span class="home-time10"
-                        >8:00 AM - 2:00 PM GMT +1 / 10:00 AM - 4:00 PM Your
-                        local time (6 Hours)</span
-                      ><h3 class="home-title12">Pre-event networking</h3
-                      ><div class="home-author11"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon27"
-                        /><div class="home-details11"
-                          ><span class="home-name11">Andy Smith</span
-                          ><div class="home-point12"></div
-                          ><span class="home-caption14">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button10"
-                      >Connect to chat room</button
-                    ></div
-                  ><div class="home-element11"
-                    ><div class="home-main12"
-                      ><span class="home-time11"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title13">How to Lorem Ipsum.</h3
-                      ><div class="home-author12"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon28"
-                        /><div class="home-details12"
-                          ><span class="home-name12">Samantha Johnson</span
-                          ><div class="home-point13"></div
-                          ><span class="home-caption15">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button11"
-                      ><span><span>See live</span><br /></span></button></div
-                  ><div class="home-element12"
-                    ><div class="home-main13"
-                      ><span class="home-time12"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title14">How to Lorem Ipsum.</h3
-                      ><div class="home-author13"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon29"
-                        /><div class="home-details13"
-                          ><span class="home-name13">Samantha Johnson</span
-                          ><div class="home-point14"></div
-                          ><span class="home-caption16">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button12"
-                      ><span><span>See live</span><br /></span></button></div
-                  ><div class="home-element13"
-                    ><div class="home-main14"
-                      ><span class="home-time13"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title15">How to Lorem Ipsum.</h3
-                      ><div class="home-author14"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon30"
-                        /><div class="home-details14"
-                          ><span class="home-name14">Samantha Johnson</span
-                          ><div class="home-point15"></div
-                          ><span class="home-caption17">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button13"
-                      ><span><span>See live</span><br /></span></button></div
-                  ><div class="home-element14"
-                    ><div class="home-main15"
-                      ><span class="home-time14"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title16">How to Lorem Ipsum.</h3
-                      ><div class="home-author15"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon31"
-                        /><div class="home-details15"
-                          ><span class="home-name15">Samantha Johnson</span
-                          ><div class="home-point16"></div
-                          ><span class="home-caption18">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button14"
-                      ><span><span>See live</span><br /></span></button></div
-                  ><div class="home-element15"
-                    ><div class="home-main16"
-                      ><span class="home-time15"
-                        >8:00 PM - 10:00 PM GMT +1 / 10:00 PM - 12:00 AM Your
-                        local time (2 Hours)</span
-                      ><h3 class="home-title17">Post-event networking</h3
-                      ><div class="home-author16"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDZ8fHBvdHJhaXR8ZW58MHx8fHwxNjcxNDg1OTU2&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon32"
-                        /><div class="home-details16"
-                          ><span class="home-name16">Samantha Johnson</span
-                          ><div class="home-point17"></div
-                          ><span class="home-caption19">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button15"
-                      ><span
-                        ><span>Connect to chat room</span
-                        ><br /></span></button></div></section
-                ><section data-role="schedule-content" class="home-list4"
-                  ><div class="home-element16"
-                    ><div class="home-main17"
-                      ><span class="home-time16"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title18">How to Lorem Ipsum.</h3
-                      ><div class="home-author17"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon33"
-                        /><div class="home-details17"
-                          ><span class="home-name17">Samantha Johnson</span
-                          ><div class="home-point18"></div
-                          ><span class="home-caption20">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button16"
-                      ><span><span>See live</span><br /></span></button></div
-                  ><div class="home-element17"
-                    ><div class="home-main18"
-                      ><span class="home-time17"
-                        >8:00 AM - 2:00 PM GMT +1 / 10:00 AM - 4:00 PM Your
-                        local time (6 Hours)</span
-                      ><h3 class="home-title19">Pre-event networking</h3
-                      ><div class="home-author18"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon34"
-                        /><div class="home-details18"
-                          ><span class="home-name18">Andy Smith</span
-                          ><div class="home-point19"></div
-                          ><span class="home-caption21">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button17"
-                      >Connect to chat room</button
-                    ></div
-                  ><div class="home-element18"
-                    ><div class="home-main19"
-                      ><span class="home-time18"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title20">How to Lorem Ipsum.</h3
-                      ><div class="home-author19"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon35"
-                        /><div class="home-details19"
-                          ><span class="home-name19">Samantha Johnson</span
-                          ><div class="home-point20"></div
-                          ><span class="home-caption22">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button18"
-                      ><span
-                        ><span>See live</span
-                        ><br /></span></button></div></section
-                ><section data-role="schedule-content" class="home-list5"
-                  ><div class="home-element19"
-                    ><div class="home-main20"
-                      ><span class="home-time19"
-                        >8:00 AM - 2:00 PM GMT +1 / 10:00 AM - 4:00 PM Your
-                        local time (6 Hours)</span
-                      ><h3 class="home-title21">Pre-event networking</h3
-                      ><div class="home-author20"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon36"
-                        /><div class="home-details20"
-                          ><span class="home-name20">Andy Smith</span
-                          ><div class="home-point21"></div
-                          ><span class="home-caption23">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button19"
-                      >Connect to chat room</button
-                    ></div
-                  ><div class="home-element20"
-                    ><div class="home-main21"
-                      ><span class="home-time20"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title22">How to Lorem Ipsum.</h3
-                      ><div class="home-author21"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon37"
-                        /><div class="home-details21"
-                          ><span class="home-name21">Samantha Johnson</span
-                          ><div class="home-point22"></div
-                          ><span class="home-caption24">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button20"
-                      ><span><span>See live</span><br /></span></button></div
-                  ><div class="home-element21"
-                    ><div class="home-main22"
-                      ><span class="home-time21"
-                        >3:00 PM - 3:30 PM GMT +1 / 5:00 PM - 5:30 PM Your local
-                        time (30 Minutes)</span
-                      ><h3 class="home-title23">How to Lorem Ipsum.</h3
-                      ><div class="home-author22"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1607957159143-de3859adca2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxwb3RyYWl0fGVufDB8fHx8MTY3MTE5ODQwMQ&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon38"
-                        /><div class="home-details22"
-                          ><span class="home-name22">Samantha Johnson</span
-                          ><div class="home-point23"></div
-                          ><span class="home-caption25">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button21"
-                      ><span><span>See live</span><br /></span></button></div
-                  ><div class="home-element22"
-                    ><div class="home-main23"
-                      ><span class="home-time22"
-                        >8:00 PM - 10:00 PM GMT +1 / 10:00 PM - 12:00 AM Your
-                        local time (2 Hours)</span
-                      ><h3 class="home-title24">Post-event networking</h3
-                      ><div class="home-author23"
-                        ><img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDZ8fHBvdHJhaXR8ZW58MHx8fHwxNjcxNDg1OTU2&amp;ixlib=rb-4.0.3&amp;w=200"
-                          class="home-icon39"
-                        /><div class="home-details23"
-                          ><span class="home-name23">Samantha Johnson</span
-                          ><div class="home-point24"></div
-                          ><span class="home-caption26">CEO, Opary</span></div
-                        ></div
-                      ></div
-                    ><button class="button home-button22"
-                      ><span
-                        ><span>Connect to chat room</span
-                        ><br /></span></button></div></section></div
-              ><div
-                ><div class="home-container13"
-                  ><script>
-                    // Get all tab buttons
-                    const tabButtons = document.querySelectorAll('[data-role='schedule-select']');
-                    // Get all tab contents
-                    const tabContents = document.querySelectorAll('[data-role='schedule-content']');
-
-                    // Add 'tab-active' class to the first tab button
-                    tabButtons[0].classList.add('tab-active');
-                    // Show the first tab content
-                    tabContents[0].style.display = 'block';
-
-                    tabButtons.forEach((tabButton, index) => {
-                      tabButton.addEventListener('click', () => {
-                        // Remove 'tab-active' class from all tab buttons
-                        tabButtons.forEach((button) => {
-                          button.classList.remove('tab-active');
-                        });
-                        // Add 'tab-active' class to the current tab button
-                        tabButton.classList.add('tab-active');
-                        // Hide all tab contents
-                        tabContents.forEach((tabContent) => {
-                          tabContent.style.display = 'none';
-                        });
-                        // Show the tab content for the current tab button
-                        tabContents[index].style.display = 'block';
-                      });
-                    });
-                  </script></div
-                ></div
-              ></div
-            ></div
-          ></section
-        ><section class="home-sponsors"
-          ><div class="home-header16"
-            ><div class="home-section-numeral2"
-              ><div class="home-divide2"></div
-              ><p class="home-text58">03</p></div
-            ><div data-aos="fade-right" class="home-heading3"
-              ><h2 class="home-title25">Sponsors </h2
-              ><p class="home-caption27"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.</p
-              ></div
-            ></div
-          ><div class="home-brands1"
-            ><div class="brand"
-              ><img
-                alt="image"
-                src="public/brand-1.svg"
-                class="home-image16" /></div
-            ><div class="brand home-brand2"
-              ><img
-                alt="image"
-                src="public/brand-2.svg"
-                class="home-image17" /></div
-            ><div class="brand home-brand3"
-              ><img
-                alt="image"
-                src="public/brand-3.svg"
-                class="home-image18" /></div
-            ><div class="home-brand4 brand"
-              ><img
-                alt="image"
-                src="public/brand-4.svg"
-                class="home-image19" /></div
-            ><div class="home-brand5 brand"
-              ><img
-                alt="image"
-                src="public/brand-5.svg"
-                class="home-image20" /></div
-            ><div class="home-brand6 brand"
-              ><img
-                alt="image"
-                src="public/brand-6.svg"
-                class="home-image21" /></div
-            ><div class="home-brand7 brand"
-              ><img
-                alt="image"
-                src="public/brand-7.svg"
-                class="home-image22" /></div
-            ><div class="home-brand8 brand"
-              ><img
-                alt="image"
-                src="public/brand-8.svg"
-                class="home-image23" /></div></div></section
-        ><section class="home-why"
-          ><div class="home-header17"
-            ><div class="home-section-numeral3"
-              ><div class="home-divide3"></div
-              ><p class="home-text59">04</p></div
-            ><div data-aos="fade-right" class="home-heading4"
-              ><h2 class="home-title26">Why OnConf</h2
-              ><p class="home-caption28"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.</p
-              ></div
-            ></div
-          ><div class="home-brands2"
-            ><div class="home-row19"
-              ><div class="home-item1"
-                ><img
-                  alt="image"
-                  src="public/why-1.svg"
-                  class="home-image24"
-                /><div class="home-details24"
-                  ><h3 class="home-title27">Networking</h3
-                  ><p class="home-description10"
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p></div
-                ></div
-              ><div class="home-item2"
-                ><img
-                  alt="image"
-                  src="public/why-2.svg"
-                  class="home-image25"
-                /><div class="home-details25"
-                  ><h3 class="home-title28">Learning</h3
-                  ><p class="home-description11"
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p></div
-                ></div
-              ><div class="home-item3"
-                ><img
-                  alt="image"
-                  src="public/why-3.svg"
-                  class="home-image26"
-                /><div class="home-details26"
-                  ><h3 class="home-title29">Developing</h3
-                  ><p class="home-description12"
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p></div
-                ></div
-              ></div
-            ></div
-          ></section
-        ><section class="home-black"
-          ><img
-            alt="image"
-            src="public/black-vector.svg"
-            class="home-image27"
-          /><section class="home-quotes1"
-            ><div class="home-row20"
-              ><img
-                alt="image"
-                src="public/quotes-1-1400w.png"
-                class="home-image28" /><div class="home-row21"
-                ><div class="home-details27"
-                  ><p class="home-quote11"
-                    >“Lorem ipsum dolor sit amet consectetur “</p
-                  ><span class="home-author24">The Guard</span></div
-                ><img
-                  alt="image"
-                  src="public/quotes-2-700w.png"
-                  class="home-image29" /></div></div
-            ><div class="home-row22"
-              ><div class="home-details28"
-                ><p class="home-quote12"
-                  >“Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                  amet“</p
-                ><span class="home-author25">Wall Street News</span></div
-              ><img
-                alt="image"
-                src="public/quotes-3-1400w.png"
-                class="home-image30"
-              /><div class="home-details29"
-                ><p class="home-quote13"
-                  >“Duis aute irure dolor in reprehenderit in voluptate velit
-                  “</p
-                ><span class="home-author26">Inside Business</span></div
-              ></div
-            ></section
-          ><section class="home-testimonials"
-            ><div class="home-header18"
-              ><div class="home-section-numeral4"
-                ><div class="home-divide4"></div
-                ><p class="home-text60">05</p></div
-              ><div data-aos="fade-right" class="home-heading5"
-                ><h2 class="home-title30"
-                  >Don’t just take our word for it. Here’s what past attendees
-                  have to say:</h2
-                ></div
-              ></div
-            ><div id="scrollbar" class="home-quotes2"
-              ><div class="home-quote14"
-                ><div class="home-author27"
-                  ><img
-                    alt="image"
-                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
-                    class="home-image31"
-                  /><div class="home-details30"
-                    ><span class="home-name24">Samantha Johnson</span
-                    ><span class="home-handle1">@thisissammy</span></div
-                  ></div
-                ><p class="home-quote15"
-                  >“Duis aute irure dolor in reprehenderit in voluptate
-                  velit.”</p
-                ></div
-              ><div class="home-quote16"
-                ><div class="home-author28"
-                  ><img
-                    alt="image"
-                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
-                    class="home-image32"
-                  /><div class="home-details31"
-                    ><span class="home-name25">Samantha Johnson</span
-                    ><span class="home-handle2">@thisissammy</span></div
-                  ></div
-                ><p class="home-quote17"
-                  >“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  ”</p
-                ></div
-              ><div class="home-quote18"
-                ><div class="home-author29"
-                  ><img
-                    alt="image"
-                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
-                    class="home-image33"
-                  /><div class="home-details32"
-                    ><span class="home-name26">Samantha Johnson</span
-                    ><span class="home-handle3">@thisissammy</span></div
-                  ></div
-                ><p class="home-quote19"
-                  >“Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea.”</p
-                ></div
-              ><div class="home-quote20"
-                ><div class="home-author30"
-                  ><img
-                    alt="image"
-                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
-                    class="home-image34"
-                  /><div class="home-details33"
-                    ><span class="home-name27">Samantha Johnson</span
-                    ><span class="home-handle4">@thisissammy</span></div
-                  ></div
-                ><p class="home-quote21"
-                  >“Duis aute irure dolor in reprehenderit in voluptate
-                  velit.”</p
-                ></div
-              ><div class="home-quote22"
-                ><div class="home-author31"
-                  ><img
-                    alt="image"
-                    src="https://images.unsplash.com/photo-1603771550805-abcf98e420e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxwb3RyYWl0fGVufDB8fHx8MTY3MTQ4NTk1Ng&amp;ixlib=rb-4.0.3&amp;w=200"
-                    class="home-image35"
-                  /><div class="home-details34"
-                    ><span class="home-name28">Samantha Johnson</span
-                    ><span class="home-handle5">@thisissammy</span></div
-                  ></div
-                ><p class="home-quote23"
-                  >“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  ”</p
-                ></div
-              ></div
-            ></section
-          ><section class="home-join"
-            ><h2 class="home-title31">Join us at OnConf on November 22-24 </h2
-            ><button class="home-button23 button"
-              ><span><span>Register now</span><br /></span></button></section
-          ><section class="home-more"
-            ><div class="home-header19"
-              ><div class="home-section-numeral5"
-                ><div class="home-divide5"></div
-                ><p class="home-text64">06</p></div
-              ><div data-aos="fade-right" class="home-heading6"
-                ><h2 class="home-title32"
-                  >More about pricing, accessibility or what this year’s event
-                  includes</h2
-                ></div
-              ></div
-            ><div class="home-accordions"
-              ><div class="home-accordion1"
-                ><div class="home-header20"
-                  ><div class="home-divide6"></div
-                  ><h3 class="home-title33">Event information</h3></div
-                ><div class="home-items1"
-                  ><div
-                    data-role="accordion-container"
-                    class="home-element23 accordion"
-                    ><div class="home-content15"
-                      ><span class="home-header21"
-                        >Esse cillum dolore eu fugiat nulla pariatur.</span
-                      ><span
-                        data-role="accordion-content"
-                        class="home-description13"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
-                      </span></div
-                    ><div class="home-icon-container1"
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon40"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon42"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg></div></div
-                  ><div
-                    data-role="accordion-container"
-                    class="home-element24 accordion"
-                    ><div class="home-content16"
-                      ><span class="home-header22"
-                        >Esse cillum dolore eu fugiat nulla pariatur.</span
-                      ><span
-                        data-role="accordion-content"
-                        class="home-description14"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
-                      </span></div
-                    ><div class="home-icon-container2"
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon44"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon46"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg></div></div
-                  ><div
-                    data-role="accordion-container"
-                    class="home-element25 accordion"
-                    ><div class="home-content17"
-                      ><span class="home-header23"
-                        >Esse cillum dolore eu fugiat nulla pariatur.</span
-                      ><span
-                        data-role="accordion-content"
-                        class="home-description15"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
-                      </span></div
-                    ><div class="home-icon-container3"
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon48"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon50"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg></div></div></div></div
-              ><div class="home-accordion2"
-                ><div class="home-header24"
-                  ><div class="home-divide7"></div
-                  ><h3 class="home-title34">Event information</h3></div
-                ><div class="home-items2"
-                  ><div
-                    data-role="accordion-container"
-                    class="home-element26 accordion"
-                    ><div class="home-content18"
-                      ><span class="home-header25"
-                        >Esse cillum dolore eu fugiat nulla pariatur.</span
-                      ><span
-                        data-role="accordion-content"
-                        class="home-description16"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
-                      </span></div
-                    ><div class="home-icon-container4"
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon52"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon54"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg></div></div
-                  ><div
-                    data-role="accordion-container"
-                    class="home-element27 accordion"
-                    ><div class="home-content19"
-                      ><span class="home-header26"
-                        >Esse cillum dolore eu fugiat nulla pariatur.</span
-                      ><span
-                        data-role="accordion-content"
-                        class="home-description17"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
-                      </span></div
-                    ><div class="home-icon-container5"
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon56"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon58"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg></div></div
-                  ><div
-                    data-role="accordion-container"
-                    class="home-element28 accordion"
-                    ><div class="home-content20"
-                      ><span class="home-header27"
-                        >Esse cillum dolore eu fugiat nulla pariatur.</span
-                      ><span
-                        data-role="accordion-content"
-                        class="home-description18"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
-                      </span></div
-                    ><div class="home-icon-container6"
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon60"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon62"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg></div></div></div></div
-              ><div
-                ><div class="home-container15"
-                  ><script>
-                    /*
-                     Accordion - Code Embed
-                     */
-                     const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
-                     const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
-                     const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
-                     const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
-
-                     accordionContents.forEach((accordionContent) => {
-                         accordionContent.style.display = 'none'; //Hides all accordion contents
-                     });
-
-                     accordionIconsClosed.forEach((icon) => {
-                       icon.style.display = 'flex'
-                     })
-
-                     accordionIconsOpen.forEach((icon) => {
-                       icon.style.display = 'none'
-                     })
-
-                     accordionContainers.forEach((accordionContainer, index) => {
-                         accordionContainer.addEventListener('click', () => {
-                             if (accordionContents[index].style.display === 'flex') {
-                                 // If the accordion is already open, close it
-                                 accordionContents[index].style.display = 'none';
-                                 accordionIconsClosed[index].style.display = 'flex';
-                                 accordionIconsOpen[index].style.display = 'none'
-                             } else {
-                                 // If the accordion is closed, open it
-                                 accordionContents.forEach((accordionContent) => {
-                                     accordionContent.style.display = 'none'; //Hides all accordion contents
-                                 });
-
-                                 accordionIconsClosed.forEach((accordionIcon) => {
-                                     accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
-                                 });
-
-                                 accordionIconsOpen.forEach((accordionIcon) => {
-                                   accordionIcon.style.display = 'none';
-                                 })
-
-                                 accordionContents[index].style.display = 'flex'; // Shows accordion content
-                                 accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
-                                 accordionIconsOpen[index].style.display = 'flex';
-                             }
-                         });
-                     });
-                  </script>
-                </div></div
-              ></div
-            ></section
-          ></section
-        ><section class="home-subscribe"
-          ><div class="home-main24"
-            ><h2 class="home-header28"
-              >Subscribe to our newsletter for the latest OnConf news</h2
-            ><div class="home-content21"
-              ><div class="home-inputs"
-                ><input
-                  type="text"
-                  required=""
-                  placeholder="Name *"
-                  autocomplete="name"
-                  class="home-textinput1 input" /><input
-                  type="email"
-                  required=""
-                  placeholder="Email *"
-                  autocomplete="email"
-                  class="home-textinput2 input" /></div
-              ><span class="home-text65"
-                >By submitting, you agree to receive email communications from
-                OnConf, including upcoming promotions and discounted tickets,
-                news, and access to exclusive invite-only events.</span
-              ><button class="home-button24 button"
-                ><span
-                  ><span>Sign up for our newsletter</span
-                  ><br /></span></button></div></div></section
-        ><footer class="home-footer"
-          ><div class="home-content22"
-            ><div class="home-details35"
-              ><h2 class="home-title35">OnConf</h2
-              ><p class="home-description19"
-                >Product Calgary brings professionals together to connect, learn
-                from each other, find opportunities, and find talent. We started
-                as a meetup and have grown to be Alberta’s largest Product
-                Management community.</p
-              ></div
-            ><div class="home-socials"
-              ><img alt="image" src="public/linkedin.svg" class="social" /><a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link5"
-                ><img
-                  alt="image"
-                  src="public/instagram.svg"
-                  class="home-image37 social" /></a
-              ><a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link6"
-                ><img
-                  alt="image"
-                  src="public/twitter.svg"
-                  class="home-image38 social" /></a></div
-            ><span class="home-copyright"
-              >Privacy — Terms &amp; Conditions — Code of Conduct © 2022 OnConf
-              All Rights Reserved</span
-            ></div
-          ></footer
-        ><div
-          ><div class="home-container17"
-            ><script>
-              ScrollReveal().reveal('.speaker');
-              ScrollReveal().reveal('.image-notes');
-            </script></div
-          ></div
-        ><div
-          ><div class="home-container19"
-            ><style>
-              #scrollbar::-webkit-scrollbar-track
-              {
-              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-              	border-radius: 10px;
-              	background-color: #F5F5F5;
-              }
-
-              #scrollbar::-webkit-scrollbar
-              {
-              	height: 12px;
-              	background-color: #F5F5F5;
-              	border-radius: 10px;
-              }
-
-              #scrollbar::-webkit-scrollbar-thumb
-              {
-              	border-radius: 10px;
-              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-              	background-color: #555;
-              }
-            </style></div
-          ></div
-        ></div
-      ></div
-    >
+              alt="Webstudio Logo"
+              width="20"
+              height="20"
+              src="/assets/logo_r1qaJQiri6sK3rPyq-Sar.svg"
+              class="w-image c13fq7lq c1ckxn0n"
+              decoding="async"
+              loading="lazy"
+            /><span class="w-text">Built with Webstudio</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "_urlRewrite": null,
+        "pageId": "/pages/index",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/",
+          "system": { "params": {}, "search": {}, "origin": "https://url" },
+          "resources": {},
+          "pageMeta": {
+            "title": "Boost your rankings with AI.",
+            "description": "Elevate your site’s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.",
+            "excludePageFromSearch": false,
+            "language": "!undefined",
+            "socialImageAssetName": "ascend-cover_aPSGjSz0r-u7Gec3vty3n.png",
+            "socialImageUrl": "!undefined",
+            "status": "!undefined",
+            "redirect": "!undefined",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script id="vike_globalContext" type="application/json">
+      {}
+    </script>
     <script
-      defer=""
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script></body
-></html>
+      src="/assets/entries/entry-server-routing.LEucZVqY.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_index.ugF5m-k3.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-UJCCUtus.js"
+      as="script"
+      type="text/javascript"
+    />
+  </body>
+</html>
