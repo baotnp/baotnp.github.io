@@ -83,42 +83,15 @@ summary::-webkit-details-marker{display:none}
                   max-width: 480px;
                   margin: 24px 0;
                   font-family: 'Space Grotesk', Arial, sans-serif;
-                "> <form id="ox-contact-form" style="display: flex; flex-direction: column; gap: 12px"> <input type="hidden" name="access_key" value="7973e828-4803-4eeb-82df-cbe1f665e6f0"> <input type="hidden" name="subject" value="Liên hệ mới từ oxtech.vn"> <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off"> <input type="text" name="name" placeholder="Họ và tên" required style="
-                      padding: 10px 12px;
-                      border: 1px solid #ccc;
-                      border-radius: 6px;
-                      font-family: inherit;
-                      font-size: 14px;
-                    "> <input type="email" name="email" placeholder="Email" required style="
-                      padding: 10px 12px;
-                      border: 1px solid #ccc;
-                      border-radius: 6px;
-                      font-family: inherit;
-                      font-size: 14px;
-                    "> <input type="tel" name="phone" placeholder="Số điện thoại (không bắt buộc)" style="
-                      padding: 10px 12px;
-                      border: 1px solid #ccc;
-                      border-radius: 6px;
-                      font-family: inherit;
-                      font-size: 14px;
-                    "> <textarea name="message" placeholder="Nội dung cần tư vấn" required rows="4" style="
-                      padding: 10px 12px;
-                      border: 1px solid #ccc;
-                      border-radius: 6px;
-                      font-family: inherit;
-                      font-size: 14px;
-                      resize: vertical;
-                    "></textarea> <button type="submit" style="
-                      padding: 12px 20px;
-                      border: none;
-                      border-radius: 6px;
-                      background: #191a23;
-                      color: #fff;
-                      font-family: inherit;
-                      font-size: 14px;
-                      font-weight: 600;
-                      cursor: pointer;
-                    "> Gửi liên hệ </button> <p id="ox-contact-result" style="margin: 0; font-size: 14px"></p> </form> </div> <script>
+                "> <style>
+                  .ox-form-field{width:100%;box-sizing:border-box;padding:12px 16px;border:2px solid #191a23;border-radius:16px;font-family:inherit;font-size:14px;background:#fff;color:#191a23;box-shadow:3px 3px 0 0 #191a23;transition:box-shadow .15s ease,translate .15s ease}
+                  .ox-form-field::placeholder{color:#8a8a8a}
+                  .ox-form-field:focus{outline:2px solid #b9ff66;outline-offset:2px;box-shadow:1px 1px 0 0 #191a23;translate:2px 2px}
+                  .ox-form-label{display:block;color:#fff;font-size:13px;font-weight:600;margin-bottom:6px}
+                  .ox-form-submit{align-self:flex-start;padding:14px 28px;border:2px solid #191a23;border-radius:999px;background:#191a23;color:#fff;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;box-shadow:3px 3px 0 0 #b9ff66;transition:box-shadow .15s ease,translate .15s ease}
+                  .ox-form-submit:hover{translate:2px 2px;box-shadow:1px 1px 0 0 #b9ff66}
+                  .ox-form-submit:focus-visible{outline:2px solid #b9ff66;outline-offset:2px}
+                </style> <form id="ox-contact-form" style="display: flex; flex-direction: column; gap: 16px; max-width: 420px"> <input type="hidden" name="access_key" value="7973e828-4803-4eeb-82df-cbe1f665e6f0"> <input type="hidden" name="subject" value="Liên hệ mới từ oxtech.vn"> <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off"> <div> <label class="ox-form-label" for="ox-name">Họ và tên</label> <input id="ox-name" class="ox-form-field" type="text" name="name" placeholder="Nguyễn Văn A" required> </div> <div> <label class="ox-form-label" for="ox-email">Email</label> <input id="ox-email" class="ox-form-field" type="email" name="email" placeholder="ban@congty.vn" required> </div> <div> <label class="ox-form-label" for="ox-phone">Số điện thoại (không bắt buộc)</label> <input id="ox-phone" class="ox-form-field" type="tel" name="phone" placeholder="09xx xxx xxx"> </div> <div> <label class="ox-form-label" for="ox-message">Nội dung cần tư vấn</label> <textarea id="ox-message" class="ox-form-field" name="message" placeholder="Bạn đang cần hỗ trợ gì?" required rows="4" style="resize: vertical"></textarea> </div> <button type="submit" class="ox-form-submit"> Gửi liên hệ </button> <p id="ox-contact-result" style="margin: 0; font-size: 14px; color: #fff"></p> </form> </div> <script>
               (function () {
                 var form = document.getElementById("ox-contact-form");
                 var result = document.getElementById("ox-contact-result");
