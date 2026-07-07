@@ -84,23 +84,31 @@ summary::-webkit-details-marker{display:none}
                   margin: 24px 0;
                   font-family: 'Space Grotesk', Arial, sans-serif;
                 "> <style>
-                  .ox-form-field{width:100%;box-sizing:border-box;padding:12px 16px;border:2px solid #191a23;border-radius:16px;font-family:inherit;font-size:14px;background:#fff;color:#191a23;box-shadow:3px 3px 0 0 #191a23;transition:box-shadow .15s ease,translate .15s ease}
-                  .ox-form-field::placeholder{color:#8a8a8a}
+                  .ox-form-field{width:100%;box-sizing:border-box;padding:12px 16px;border:2px solid #191a23;border-radius:16px;font-family:inherit;font-size:16px;background:#fff;color:#191a23;box-shadow:3px 3px 0 0 #191a23;transition:box-shadow .15s ease,translate .15s ease}
+                  .ox-form-field::placeholder{color:#6b6b6b}
                   .ox-form-field:focus{outline:2px solid #b9ff66;outline-offset:2px;box-shadow:1px 1px 0 0 #191a23;translate:2px 2px}
                   .ox-form-label{display:block;color:#fff;font-size:13px;font-weight:600;margin-bottom:6px}
-                  .ox-form-submit{align-self:flex-start;padding:14px 28px;border:2px solid #191a23;border-radius:999px;background:#191a23;color:#fff;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;box-shadow:3px 3px 0 0 #b9ff66;transition:box-shadow .15s ease,translate .15s ease}
+                  .ox-form-submit{align-self:flex-start;padding:14px 28px;border:2px solid #191a23;border-radius:999px;background:#191a23;color:#fff;font-family:inherit;font-size:16px;font-weight:600;cursor:pointer;box-shadow:3px 3px 0 0 #b9ff66;transition:box-shadow .15s ease,translate .15s ease}
                   .ox-form-submit:hover{translate:2px 2px;box-shadow:1px 1px 0 0 #b9ff66}
                   .ox-form-submit:focus-visible{outline:2px solid #b9ff66;outline-offset:2px}
-                </style> <form id="ox-contact-form" style="display: flex; flex-direction: column; gap: 16px; max-width: 420px"> <input type="hidden" name="access_key" value="7973e828-4803-4eeb-82df-cbe1f665e6f0"> <input type="hidden" name="subject" value="Liên hệ mới từ oxtech.vn"> <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off"> <div> <label class="ox-form-label" for="ox-name">Họ và tên</label> <input id="ox-name" class="ox-form-field" type="text" name="name" placeholder="Nguyễn Văn A" required> </div> <div> <label class="ox-form-label" for="ox-email">Email</label> <input id="ox-email" class="ox-form-field" type="email" name="email" placeholder="ban@congty.vn" required> </div> <div> <label class="ox-form-label" for="ox-phone">Số điện thoại (không bắt buộc)</label> <input id="ox-phone" class="ox-form-field" type="tel" name="phone" placeholder="09xx xxx xxx"> </div> <div> <label class="ox-form-label" for="ox-message">Nội dung cần tư vấn</label> <textarea id="ox-message" class="ox-form-field" name="message" placeholder="Bạn đang cần hỗ trợ gì?" required rows="4" style="resize: vertical"></textarea> </div> <button type="submit" class="ox-form-submit"> Gửi liên hệ </button> <p id="ox-contact-result" style="margin: 0; font-size: 14px; color: #fff"></p> </form> </div> <script>
+                  .ox-form-submit:disabled{opacity:.6;cursor:not-allowed}
+                  #ox-contact-result{color:#fff}
+                  #ox-contact-result[data-state="success"]{color:#b9ff66}
+                  #ox-contact-result[data-state="error"]{color:#ff6b6b}
+                  @media (prefers-reduced-motion: reduce){.ox-form-field,.ox-form-submit{transition:none}}
+                </style> <form id="ox-contact-form" style="display: flex; flex-direction: column; gap: 16px; max-width: 420px"> <input type="hidden" name="access_key" value="7973e828-4803-4eeb-82df-cbe1f665e6f0"> <input type="hidden" name="subject" value="Liên hệ mới từ oxtech.vn"> <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off"> <div> <label class="ox-form-label" for="ox-name">Họ và tên</label> <input id="ox-name" class="ox-form-field" type="text" name="name" placeholder="Nguyễn Văn A" required> </div> <div> <label class="ox-form-label" for="ox-email">Email</label> <input id="ox-email" class="ox-form-field" type="email" name="email" placeholder="ban@congty.vn" required> </div> <div> <label class="ox-form-label" for="ox-phone">Số điện thoại (không bắt buộc)</label> <input id="ox-phone" class="ox-form-field" type="tel" name="phone" placeholder="09xx xxx xxx"> </div> <div> <label class="ox-form-label" for="ox-message">Nội dung cần tư vấn</label> <textarea id="ox-message" class="ox-form-field" name="message" placeholder="Bạn đang cần hỗ trợ gì?" required rows="4" style="resize: vertical"></textarea> </div> <button type="submit" class="ox-form-submit"> Gửi liên hệ </button> <p id="ox-contact-result" role="status" aria-live="polite" style="margin: 0; font-size: 14px"></p> </form> </div> <script>
               (function () {
                 var form = document.getElementById("ox-contact-form");
                 var result = document.getElementById("ox-contact-result");
+                var submitBtn = form && form.querySelector('button[type="submit"]');
                 if (!form) return;
                 form.addEventListener("submit", function (e) {
                   e.preventDefault();
                   var formData = new FormData(form);
                   var object = Object.fromEntries(formData);
                   var json = JSON.stringify(object);
+                  submitBtn.disabled = true;
+                  result.dataset.state = "pending";
                   result.textContent = "Đang gửi...";
                   fetch("https://api.web3forms.com/submit", {
                     method: "POST",
@@ -115,17 +123,23 @@ summary::-webkit-details-marker{display:none}
                     })
                     .then(function (data) {
                       if (data.success) {
+                        result.dataset.state = "success";
                         result.textContent =
                           "Cảm ơn bạn! Chúng tôi sẽ liên hệ lại sớm nhất.";
                         form.reset();
                       } else {
+                        result.dataset.state = "error";
                         result.textContent =
                           "Có lỗi xảy ra, vui lòng thử lại hoặc gửi email trực tiếp.";
                       }
                     })
                     .catch(function () {
+                      result.dataset.state = "error";
                       result.textContent =
                         "Có lỗi xảy ra, vui lòng thử lại hoặc gửi email trực tiếp.";
+                    })
+                    .finally(function () {
+                      submitBtn.disabled = false;
                     });
                 });
               })();
